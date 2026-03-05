@@ -71,4 +71,36 @@ for i in s:
         s1+=i
 print(s1)
 # # ..................
-
+s=input("enter a number:")
+s1=s.split(" ")
+l=""
+for i in s1:
+    if len(i)>len(l):
+        l=i
+print(l)
+#............
+s=input("enter a string:")
+m=""
+s1=set()
+for i in s:
+    if i not in s1:
+        m+=i
+        s1.add(i)
+print(m)
+#........................
+s1=input("enter a string:")
+s2=input("enter a string:")
+if len(s1)!=len(s2):
+    print("not")
+else:
+    fre={}
+    for i in s1:
+        fre[i]=fre.get(i,0)+1
+    for i in s2:
+        if i not in fre or fre[i]==0:
+            print("not")
+            break
+        fre[i]-=1
+    else:
+        print("yes")
+#................
