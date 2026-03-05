@@ -53,4 +53,22 @@ if palin:
 else:
     print("not palin")
 #......................
+s=input("enter a string:")
+s1={}
+for i in s:
+    if i in s1:
+        s1[i]+=1
+    else:
+        s1[i]=1
+print(s1)
+#............
+s=input("enter a number:").lower()
+s1=""
+for i in s:
+    if i in "aeiou":
+        s1+="*"
+    else:
+        s1+=i
+print(s1)
+# # ..................
 
