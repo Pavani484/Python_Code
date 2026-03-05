@@ -38,4 +38,19 @@ for i in s:
     s1=i+s1
     print(s1)
 #...............
+s=input("enter a string :")
+left=0
+right=len(s)-1
+palin=True
+while left<right:
+    if s[left]!=s[right]:
+        palin=False
+        break
+    left+=1
+    right-=1
+if palin:
+    print("palin")
+else:
+    print("not palin")
+#......................
 
