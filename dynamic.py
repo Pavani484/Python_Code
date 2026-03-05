@@ -23,3 +23,12 @@ for i in range(1,n+1):
     n1=n2
     n2=t
 #........................
+
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+a=a+b
+b=a-b
+a=a-b
+print(a)
+print(b)
+#...............
