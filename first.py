@@ -59,4 +59,21 @@
 # else:
 #     print("Element not found in tuple")
 # #.....................
+# s = set()
+# for i in range(5):
+#     num = int(input("Enter element: "))
+#     s.add(num)
+# print("Set after inserting elements:", s)
+# delete_element = int(input("Enter element to delete: "))
+# if delete_element in s:
+#     s.remove(delete_element)
+#     print("Set after deletion:", s)
+# else:
+#     print("Element not found in set")
+# search_element = int(input("Enter element to find position: "))
+# if search_element in s:
+#     print("Set does not support position/index because it is unordered.")
+# else:
+#     print("Element not found in set")
+#     #.....................................
 
