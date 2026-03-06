@@ -123,20 +123,4 @@
 #         print("class c constructor")
 # obj = C()
 #.....................
-# class A:
-#     def function_one(self):
-#         print("class a function one")
-#     def function_two(self):
-#         print("class a function two")
-# class B(A):
-#     def function_two(self):
-#         super().function_two()
-#         print("class b function two")
-#     def function_three(self):
-#         print("class b function three")
-# one=B()
-# one.function_one()
-# one.function_two()
-# one.function_three()
-#...........................................
 
