@@ -336,3 +336,16 @@
 # print(li3)
 # print(li4)
 #...................
+# x=['a','b','c','d']
+# y=[10,20,30,40]
+# dict={}
+# for i in range(len(x)):
+#     dict[x[i]]= y[i]
+# print(dict)
+#or
+# x=['a','b','c','d']
+# y=[10,20,30,40]
+# z={(x[i],y[i])for i in range(len(x))}
+# print(z)
+#..................
+
