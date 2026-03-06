@@ -139,3 +139,154 @@
 # one.function_two()
 # one.function_three()
 #...........................................
+# def function(x,y,z):
+#     print("x=",x)
+#     print("y=",y)
+#     print("z=",z)
+# function(10,20,30)
+#function(100,200)#error:number of arguments are not equal to no. of parameters
+# function(y=10,x=10,z=30)
+#function(10,20,y=30)#assigning multiple values to y
+# function(10,z=20,y=30)
+##positional aruguments is following keyword arguments
+#positional aruguments  has high priority than keyword aruguments
+#.............................
+#default paramters first priority to the positional aruguments and then default parameters.
+#............
+#arbitory,in arbitory parameters the written data type is tuple.these are used when we don't know how many paramters we can pass.
+# def function(*a):
+#     for i in a:
+#         print(i,end=" ")
+#     print()
+# function()
+# function(1)
+# function(1,2,3)
+# function(1,"pavani","python",9.8,1000)
+# ....................................
+# def function(x,*y,z=100):
+#     print(x)
+#     print(y)
+#     print(z)
+# function(10,20,30,40,60)
+# function(10,20,30,40)
+# function(10,20,30,z=108)
+# .........................
+# def patient(name,blood_group,*diseases,email="name@gmail.com"):
+#     print("Patient:", name)
+#     print("Blood group:", blood_group)
+#     print(diseases)
+#     print(email)
+# patient("abc","a+","fever","headache",email="abc@gmail.com")
+#...................................
+# def student(name,*email,**address):
+#     print("Student", name)
+#     print("Email", email)
+#     print("Address", address)
+# student(
+#     "pavani","pavani@gmail.com","pav@gmail.com",no=123,street="kothuru"
+# )
+#.........................................
+# f=open("exam.txt","w")
+# f.write("hello Pavani! How are you?\n")
+# f.close()
+# f=open("exam.txt","a")
+# f.write("let start working on python\n")
+# f.close()
+# f=open("exam.txt","r")
+# print(f.read())
+# l=f.readline()
+# l=f.readlines()
+# print(l)
+# f.close()
+# f=open("exam.txt","a")
+# f.write("let start files in python")
+# f.close()
+# f=open("exam.txt","r")
+# print(f.read())
+#.............................
+# import math,datetime
+# li=list(map(int,input("enter enter to find lcm and gcd:").split()))
+# g=math.gcd(li[0],li[1],li[2],li[3])
+# l=math.lcm(li[0],li[1],li[2],li[3])
+# print("lcm is:",l)
+# print("gcd is:",g)
+# print("current time is:",datetime.datetime.now())
+#.....................
+# import numpy as np
+# arr= np.array(([1,2],[3,4]))
+# arr2=np.array([[5,6],[7,8]])
+# print("addition:",arr+arr2)
+# print("multiplication:",arr*arr2)
+# print("matrix multiplication:",np.matmul(arr,arr2))
+# #............................................
+# import pandas as pd
+# data={
+#     'roll number':[1,2,3],
+#     'name':["Pavani","lalitha","ammu"],
+#     'age':[20,23,21],
+#     'city':["Banglore","guntur","madanapalli"],
+#     'course':["python",'CA',"Java"]
+# }
+# df=pd.DataFrame(data)
+# df.to_csv('data.csv',index=False)
+# df.to_json('data.json',orient='records')
+#...............................
+# import pandas as pd
+# data={
+#     "name":["pavani","lalitha","saritha","ammu","radha"],
+#     "department":["statistics","Accounts","mathematics","computers","commerce"],
+#     "marks":[90,95,70,90,70]
+# }
+# d={
+#     "name":["a","b","c","d"],
+#     "dep":["s","a","m","c"]
+# }
+# df=pd.DataFrame(data)
+# d=pd.DataFrame(d)
+# d.to_json("data.json",orient="records")
+# df.to_csv("data.csv",index=False)
+# d=pd.read_csv("data.csv")
+# print(d)
+# df=pd.read_json("data.json")
+# print(df)
+#............
+# def maximum(li):
+#     m=float('-inf')
+#     for i in li:
+#         if i>m:
+#             m=i
+#     print("maximum value in list:", m)
+# maximum([20,30,45,67,90])
+#..............
+# u=input("enter username:")
+# p=input("enter password:")
+# us="admin"
+# pw="password123"
+# if u==us and p==pw:
+#     print("Login successful")
+# else:
+#     print("invalid credentials")
+#.................
+# n=list(map(int,input("enter elements into list with space:").split()))
+# li=[]
+# for i in n:
+#     if i not in li:
+#         li.append(i)
+# print(li)
+#.......................
+# x=['hi','python','we','write','python','we','say','hi','python',"pavani"]
+# dict={}
+# for i in x:
+#     if i not in dict:
+#         dict[i]=1
+#     else:
+#         dict[i]+=1
+# print(dict)
+# print(max(dict.values()))
+#...........................
+# x=[('a',10),('b',20),('c',30),('d',40)]
+# for key,value in x:
+#     print(value,end=" ")
+# for i in x:
+#     print(i[1],end=" ")
+# .....................
