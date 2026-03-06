@@ -305,3 +305,34 @@
 #     li.append((i,j))
 # print(li)
 #.................
+# li=list(range(2,51,2))
+# print(li)
+# s=set(range(101,0,-2))
+# print(s)
+#................
+# li=[1,3,10,2,5]
+# print(li[1::2])
+# li1=[]
+# for i in range(1,len(li),2):
+#     li1.append(li[i])
+# print(li1)
+# li2=[li[i] for i in range(1,len(li),2)]
+# print(li2)
+#....................
+# li=[1,3,10,2,5]
+# li1=[]
+# for i in li:
+#     li1.append(i**2)
+# print(li1)
+# li2=[i**2 for i in li]
+# print(li2)
+# li3=[]
+# li4=[]
+# for i in li:
+#     if i%2!=0:
+#         li3.append(i)
+#     else:
+#         li4.append(i)
+# print(li3)
+# print(li4)
+#...................
