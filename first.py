@@ -348,4 +348,18 @@
 # z={(x[i],y[i])for i in range(len(x))}
 # print(z)
 #..................
+# num=int(input("Enter number of elements: "))
+# li=[]
+# for i in range(num):
+#     n=int(input("enter numbers:"))
+#     li.append(n)
+# for i in range(len(li)-1,-1,-1):
+#     print(li[i],end=" ")
+# l=[ li[i] for i in range(len(li)-1,-1,-1)]
+# print(l)
+#................
+# li=[1,2,3,4,5]
+# l=[i**2 if i%2==0 else i**3 for i in li]
+# print(l)
+#....................
 
