@@ -110,4 +110,33 @@
 # d["state"] = state
 # print("Final dictionary:", d)
 #..............................
+# class A:
+#     def __init__(self):
+#         print("class a constructor")
+# class B(A):
+#     def __init__(self,x):
+#         super().__init__()
+#         print("class b constructor",x)
+# class C(B):
+#     def __init__(self):
+#         super().__init__(10)
+#         print("class c constructor")
+# obj = C()
+#.....................
+# class A:
+#     def function_one(self):
+#         print("class a function one")
+#     def function_two(self):
+#         print("class a function two")
+# class B(A):
+#     def function_two(self):
+#         super().function_two()
+#         print("class b function two")
+#     def function_three(self):
+#         print("class b function three")
+# one=B()
+# one.function_one()
+# one.function_two()
+# one.function_three()
+#...........................................
 
