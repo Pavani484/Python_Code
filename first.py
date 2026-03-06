@@ -76,4 +76,38 @@
 # else:
 #     print("Element not found in set")
 #     #.....................................
+# d = {}
+# name = input("Enter name: ")
+# email = input("Enter email: ")
+# mobile = input("Enter mobile: ")
+# city = input("Enter city: ")
+# pin = input("Enter pin: ")
+# d["name"] = name
+# d["email"] = email
+# d["mobile"] = mobile
+# d["city"] = city
+# d["pin"] = pin
+# print("\nDictionary after insertion:")
+# print(d)
+# print("\nAll key-value pairs:")
+# for key, value in d.items():
+#     print(key, ":", value)
+# new_name = input("\nEnter new name to replace existing name: ")
+# d["name"] = new_name
+# print("Updated dictionary:", d)
+# remove_key = input("\nEnter key to remove: ")
+# if remove_key in d:
+#     del d[remove_key]
+#     print("Dictionary after removing key:", d)
+# else:
+#     print("Key not found")
+# check_value = input("\nEnter value to check: ")
+# if check_value in d.values():
+#     print("Value exists in dictionary")
+# else:
+#     print("Value not found")
+# state = input("\nEnter state: ")
+# d["state"] = state
+# print("Final dictionary:", d)
+#..............................
 
