@@ -35,4 +35,28 @@
 # else:
 #     print("element is not found in list")
 #....................................
+# t = ()
+# l = list(t)
+# for i in range(5):
+#     num = int(input("Enter element: "))
+#     l.append(num)
+# t = tuple(l)
+# print("Tuple after inserting elements:", t)
+# delete_element = int(input("Enter element to delete: "))
+#
+# if delete_element in t:
+#     l = list(t)
+#     l.remove(delete_element)
+#     t = tuple(l)
+#     print("Tuple after deletion:", t)
+# else:
+#     print("Element not found in tuple")
+# search_element = int(input("Enter element to find position: "))
+#
+# if search_element in t:
+#     position = t.index(search_element)
+#     print("Position of element is:", position)
+# else:
+#     print("Element not found in tuple")
+# #.....................
 
