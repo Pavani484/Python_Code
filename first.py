@@ -362,4 +362,25 @@
 # l=[i**2 if i%2==0 else i**3 for i in li]
 # print(l)
 #....................
-
+# n=int(input("Enter a number: "))
+# li=[]
+# l1=[]
+# for i in range(n):
+#     n1=int(input("Enter a number: "))
+#     li.append(n1)
+# for i in range(0,n,2):
+#     l1.append(li[i])
+# print(l1)
+#........................
+n=6
+li=[]
+for i in range(n):
+    n1=int(input("Enter a number: "))
+    li.append(n1)
+print(li)
+s=0
+for i in range(n):
+    if li[i] % 2!= 0:
+        s+=li[i]
+print(s)
+#................
