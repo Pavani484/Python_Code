@@ -114,3 +114,24 @@
 # b=bool(a)
 # print(b)
 # print(type(b))
+
+# a=" "
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+#
+# a=""
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+#bool to bool
+# a=True
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
