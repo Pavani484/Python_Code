@@ -214,3 +214,24 @@
 # b=str(a)
 # print(b)
 # print(type(b))
+#str int value to bool
+# a="10"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+# #str float value to bool
+# a="10.55"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+# #str  value to bool
+# a="happy"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
