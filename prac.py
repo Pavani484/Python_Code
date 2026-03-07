@@ -256,3 +256,36 @@
 # b=complex(a)
 # print(b)
 # print(type(b))
+#str  value to complex
+# a="hello"
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+#str bool value to complex
+# a="True"
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+#str complex value to complex
+# a="9+5j"
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+# a=2
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
+# a=6+4j
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
