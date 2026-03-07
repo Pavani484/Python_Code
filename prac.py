@@ -304,3 +304,18 @@
 # print(s)
 # s.clear()
 # print(s)
+#list
+# l=[10,30,50,"pavani"]
+# print(l)
+# print(type(l))
+# l.append(100)
+# print(l)
+# length=len(l)
+# print(length)
+# c=l.count(30)
+# print(c)
+# b=l.copy()
+# print(b)
+# n=[3,6,9.8]
+# l.extend(n)
+# print(l)
