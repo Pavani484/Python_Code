@@ -289,3 +289,18 @@
 # b=str(a)
 # print(b)
 # print(type(b))
+#set
+# s={10,20,40,50,70}
+# print(s)
+# print(type(s))
+# print(len(s))
+# s.add("pavani")
+# print(s)
+# s.remove(20)
+# print(s)
+# s.add(98)
+# print(s)
+# s.copy()
+# print(s)
+# s.clear()
+# print(s)
