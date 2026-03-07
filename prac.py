@@ -61,3 +61,27 @@
 # print(type(a))
 # b=float(a)
 # print(b)
+
+# print(type(b))
+#bool to float
+# a=True
+# print(a)
+# print(type(a))
+# b=float(a)
+# print(b)
+# print(type(b))
+
+# a=False
+# print(a)
+# print(type(a))
+# b=float(a)
+# print(b)
+# print(type(b))
+#complex to float
+# a=0+0j
+# print(a)
+# print(type(a))
+# b=float(a)
+# print(b)
+# print(type(b))
+# print("boolean conversion")
