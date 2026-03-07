@@ -85,3 +85,32 @@
 # print(b)
 # print(type(b))
 # print("boolean conversion")
+
+#int to bool
+# a=10
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+
+# a=0.0
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+
+# a=-9.87
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+# str to bool
+# a=" skill"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
