@@ -157,3 +157,24 @@
 # b=complex(a)
 # print(b)
 # print(type(b))
+#str to complex
+# a="wish"
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+#bool to complex
+# a=True
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+
+# a=False
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
