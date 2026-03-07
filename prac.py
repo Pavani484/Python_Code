@@ -178,3 +178,18 @@
 # b=complex(a)
 # print(b)
 # print(type(b))
+# #complex to complex
+# a=0-5j
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+# print("string conversion")
+# #str int value to str
+# a="10"
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
