@@ -193,3 +193,24 @@
 # b=str(a)
 # print(b)
 # print(type(b))
+# #str float value to str
+# a="10.55"
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
+# #str bool value to str
+# a="True"
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
+# #str complex value to str
+# a="10.55+3j"
+# print(a)
+# print(type(a))
+# b=str(a)
+# print(b)
+# print(type(b))
