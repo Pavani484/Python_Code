@@ -135,3 +135,25 @@
 # b=bool(a)
 # print(b)
 # print(type(b))
+#complex to bool
+# a=10-5j
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+#print("complex conversion")
+#int to complex
+# a=10
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
+# #float to complex
+# a=10.56
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
