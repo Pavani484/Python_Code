@@ -235,3 +235,24 @@
 # b=bool(a)
 # print(b)
 # print(type(b))
+# #str bool value to bool
+# a="True"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+# #str complex value to bool
+# a="2+3j"
+# print(a)
+# print(type(a))
+# b=bool(a)
+# print(b)
+# print(type(b))
+#str int value to complex
+# a="1"
+# print(a)
+# print(type(a))
+# b=complex(a)
+# print(b)
+# print(type(b))
