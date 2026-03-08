@@ -370,5 +370,21 @@
 # print(names[-3:])
 # names[1]='kavya sri'
 # print(names)
+# names={'arshad','kavya','kavin','surendar'}
+# print(names)
+# names.add('pavani')
+# print(names)
+# names.remove('kavin')
+# print(names)
+# names[0]='rahul'
+# print(names)
+
+# student={1:'arshad',2:'kavya',3:'kavun'}
+# print(student[1])
+# print(student[2])
+# student[4]='pavani'
+# print(student)
+# student[2]='kavya sri'
+# print(student)
 
 
