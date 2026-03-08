@@ -497,5 +497,26 @@
 # else:
 #     print("Please enter only one character")
 #..............
+# ch=input("enter  a character:")
+# if ch.lower() in "aeiou":
+#     print(ch," is a vowel")
+# else:
+#     print(ch,"is a consonant")
+# #..............
+# n=int(input("enter a number:"))
+# if n%3==0 and n%5==0:
+#     print(n,"is divisible by 3 and 5")
+# else:
+#     print(n,"is not divisible by 3 and 5")
+#..............
+# n1,n2=map(int,input("enter the range with space:").split())
+# c=0
+# for i in range(n1,n2+1):
+#     if i%2==0:
+#         print(i,end=" ")
+#         c+=1
+# print("\n count number of even numbers",c)
+#....................
+
 
 
