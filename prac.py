@@ -517,6 +517,30 @@
 #         c+=1
 # print("\n count number of even numbers",c)
 #....................
-
+# n=int(input("enter a number:" ))
+# fact=1
+# for i in range(n,0,-1):
+#     fact=fact*i
+# print(fact)
+#............
+# num=int(input("enter a number:"))
+# r=0
+# n=num
+# for i in range(len(str(num))):
+#     n1=n%10
+#     r=r*10+n1
+#     n=n//10
+# print(r)
+#---------
+# n=int( input("Enter a number: "))
+# r=0
+# #i=1
+# while n>0:
+#     t=n%10
+#     r=r*10+t
+#     n=n//10
+#    # i+=1
+# print(r)
+#............
 
 
