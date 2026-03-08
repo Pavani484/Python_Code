@@ -386,5 +386,37 @@
 # print(student)
 # student[2]='kavya sri'
 # print(student)
+#...................
+
+
+# n=int(input("enter an integer"))
+# if n % 2==0:
+#     print(n,"is even")
+# else:
+#     print(n,"is odd")
+#
+# n=int(input("enter an integer number"))
+# if n%5==0:
+#     print(n,"is divisible by 5")
+# else:
+#     print(n,"is not divisible by 5")
+# print("1 is for addition")
+# print("2 is for subtraction")
+# print("3 is for Division")
+# print("4 is for multiplication")
+# a=int(input("enter a number"))
+# n1=int(input("enter first integer numbers:"))
+# n2=int(input("enter second integer numbers:"))
+# if a==1:
+#     print(n1+n2)
+# elif a==2:
+#     print(n1-n2)
+# elif a==3:
+#     print(n1/n2)
+# elif a==4:
+#     print(n1*n2)
+# else:
+#     print("invalid input operation")
+#......................
 
 
