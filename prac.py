@@ -352,6 +352,23 @@
 #
 # items.remove(0)
 # print(items)
+# items = []
+# n = int(input("enter no of items:"))
+# items.append(int(input("enter item price: ")))
+# items.append(int(input("enter item price: ")))
+# items.append(int(input("enter item price: ")))
+# items.append(int(input("enter item price: ")))
+# items.append(int(input("enter item price: ")))
+# print("Before removing 0:", items)
+# items.remove(0)
+# print("After removing 0:", items)
 
+# names=('arshad','kavya','kavin','surendar')
+# print(names[0])
+# print(names[len(names)-1])
+# print(names[:2])
+# print(names[-3:])
+# names[1]='kavya sri'
+# print(names)
 
 
