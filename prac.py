@@ -542,7 +542,7 @@
 #    # i+=1
 # print(r)
 #............
- n=int(input("enter a number:"))
+ # n=int(input("enter a number:"))
 # for i in range(2,n):
 #     if n%i==0:
 #         print("not prime number")
@@ -559,5 +559,28 @@
 #     if c==2:
 #         print(i,end=",")
 #.................
+#
+# n=int(input("enter a number:"))
+# r=0
+# t=n
+# for i in range(len(str(n))):
+#     d=t%10
+#     r=r*10+d
+#     t=t//10
+# print(r)
+# if r==n:
+#     print("the number is palindrome")
+# else:
+#     print("the number is not palindrome")
+#................
+# n=int(input("enter a number:"))
+# n1=0
+# n2=1
+# for i in range(n):
+#     print(n1,end=" ")
+#     n3=n1+n2
+#     n1=n2
+#     n2=n3
+#..................
 
 
