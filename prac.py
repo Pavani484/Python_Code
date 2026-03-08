@@ -582,5 +582,26 @@
 #     n1=n2
 #     n2=n3
 #..................
+# i=1
+# while i<4:
+#     print(i)
+#     i=i+1
+# else:
+#     print("Done")
+#...........
+# for i in range(3):
+#     if i==2:
+#         break
+#     print(i)
+# else:
+#     print("completed")
+#...................
+# l=[1,2,3,4,5,1,2,9,8]
+# l1=[]
+# for i in  l:
+#     if i not in l1:
+#         l1.append(i)
+# print(l1)
+#................
 
 
