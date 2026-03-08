@@ -624,5 +624,23 @@
 #     return a+b
 # r=add3(10,30)
 # print(r)
+#2.	Write a program to find the second largest element in a list.
+# l1=[1,2,5,7,8,9]
+# m=max(l1)
+# for i in l1:
+#     if i<m:
+#         print(i)
+
+#..........................
+#
+# class Program:
+#     def display(self):
+#         print("about the self")
+#         a=10
+#         b=20
+#         return a+b
+# p=Program()
+# p.display()
+# ....................
 
 
