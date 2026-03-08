@@ -473,5 +473,29 @@
 # else:
 #     print(n2,"is a big number")
 #...........................
+# year=int(input("enter a the year:"))
+# if year%4==0 or year%400==0 and year%100!=0 :
+#     print(year,"is a leap year")
+# else:
+#     print(year,"is not a leap year")
+#...................
+# ch=input("enter a character:")
+# if ch=='a' or ch=='A' or ch=='e' or ch=='E' or ch=='i' or ch=='I' or ch=='o' or ch=='O' or ch=='u' or ch=='U':
+#     print(ch,"is a vowel")
+# else:
+#     print(ch,"is not a vowel")
+# #..............
+# ch = input("Enter a character: ")
+# if len(ch) == 1:
+#     if ch.isalpha():
+#         if ch.lower() in 'aeiou':
+#             print(ch, "is a vowel")
+#         else:
+#             print(ch, "is a consonant")
+#     else:
+#         print("Please enter only an alphabet")
+# else:
+#     print("Please enter only one character")
+#..............
 
 
