@@ -319,12 +319,7 @@
 # n=[3,6,9.8]
 # l.extend(n)
 # print(l)
-
-#commited
-
-
-
-
+#......................
 # x=[100,200,300,400]
 # print(x[-1])
 # print(x[1])
@@ -338,6 +333,25 @@
 # print(x[1]+x[2])
 # x[3]=x[4]
 # print(x)
+#.....................
+# name=('arshad','kavya','kavin','surendar')
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
+# print(name[-2:])
+# print(name[-3])
+# name[2]='kavin john'
+# print(name)
+# items=[]
+# n=int(input("enter no of items"))
+# for i in range(n):
+#     p_item=int(input("enter item prices:"))
+#     items.append(p_item)
+# print(items)
+#
+# items.remove(0)
+# print(items)
 
 
 
