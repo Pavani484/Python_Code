@@ -418,5 +418,41 @@
 # else:
 #     print("invalid input operation")
 #......................
+# n=int(input("enter an integer"))
+# for i in range(1,11):
+#     print(n,"*",i,"=",n*i)
+
+# n = input("Enter an integer: ")
+#
+# if n.isdigit():
+#     n = int(n)
+#
+#     if n % 2 == 0:
+#         print(n, "is even")
+#     else:
+#         print(n, "is odd")
+# else:
+#     print("Enter only integers")
+#loops
+# for i in "wish2skill":
+#     #print(i,end="")
+#     print(i)
+# for i in range(11):
+#     print(i)
+# for i in range(1,10,2):
+#     print(i)
+# for i in range(2,10,2):
+#     print(i)
+
+# for i in range(9,0,-1):
+#     print(i)
+# for i in range(11):
+#     print("wish2skill")
+
+# i=1
+# while i<=10:
+#     print(i)
+#     i+=2
+# # ...........
 
 
