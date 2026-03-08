@@ -603,5 +603,26 @@
 #         l1.append(i)
 # print(l1)
 #................
+# def add():
+#     a=10
+#     b=20
+#     print(a+b)
+# add()
+#....................
+# def add1(a,b):
+#     print(a+b)
+# add1(10,20)
+#...........
+# def add2():
+#     a=10
+#     b=20
+#     return a+b
+# r=add2()
+# print(r)
+#.............
+# def add3(a,b):
+#     return a+b
+# r=add3(10,30)
+# print(r)
 
 
