@@ -454,5 +454,24 @@
 #     print(i)
 #     i+=2
 # # ...........
+# for i in range(10):
+#     if i==4:
+#         continue
+#     print(i)
+#.....................
+# n=int(input("enter a number:"))
+# if n>0:
+#     print(n,"is a positive number")
+# elif n<0:
+#     print(n,"is a negative number")
+# else:
+#     print(n,"is zero")
+#...............
+# n1,n2=map(int,input("enter two numbers with space:").split())
+# if n1>n2:
+#     print(n1,"is a big number")
+# else:
+#     print(n2,"is a big number")
+#...........................
 
 
