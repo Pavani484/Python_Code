@@ -776,3 +776,20 @@
 #     else:
 #         print("Anagram")
 #.................................
+#to print number of words in a string
+# s=input("enter a string:")
+# s=len(s.split())
+# print(s)
+# .........................
+# # to convert each letter of each word is capital
+# s=input('enter a string:')
+# s1=s.title()
+# print(s1)
+# #(or)
+# s = input("Enter a string: ")
+# words = s.split()
+# result = ""
+# for word in words:
+#     result += word.capitalize() + " "
+# print(result.strip())
+#.........................
