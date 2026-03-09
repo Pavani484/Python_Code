@@ -716,3 +716,24 @@
 # s = s.replace(" ", "")
 # print(s)
 #.......................
+#to count how many times each character  appear in a string
+# s = input("Enter a string: ")
+# freq = {}
+# for ch in s:
+#     if ch in freq:
+#         print(ch, freq[ch])
+#         freq[ch] += 1
+#     else:
+#         freq[ch] = 1
+# print(freq)
+#...........................
+#to replace all vowels in a string with * symbol
+# s=input("enter a string:")
+# s1=''
+# for i in s:
+#     if i.lower() in "aeiou":
+#         s1+='*'
+#     else:
+#         s1+=i
+# print(s1)
+#....................
