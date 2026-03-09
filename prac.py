@@ -793,3 +793,21 @@
 #     result += word.capitalize() + " "
 # print(result.strip())
 #.........................
+
+# s=input("enter a string:")
+# r=''
+# for i in s:
+#     if i.lower() in "aeiou":
+#         r+="*"
+#     else:
+#         r+=i
+# print(r)
+#......................
+# s=input("enter a string:")
+# s=s.split()
+# long=""
+# for i in s:
+#     if len(i)>len(long):
+#         long=i
+# print(long)
+# ,,,,,,,,,,,,,,,
