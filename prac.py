@@ -662,3 +662,57 @@
 #     r = i+ r
 # print(r)
 #........................
+# s=input("enter a string:")
+# r=s[::-1]
+# print(r)
+# if r==s:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+#(or)
+# s=input("enter a string:")
+# r=""
+# for i in s:
+#     print(i+r)
+#     r=i+r
+# print(r)
+# if r==s:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+#(or)
+# s = input("enter a string: ").lower()
+# left = 0
+# right = len(s) - 1
+# is_palindrome = True
+# while left < right:
+#     if s[left] != s[right]:
+#         is_palindrome = False
+#         break
+#     left += 1
+#     right -= 1
+# if is_palindrome:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+#.........................
+# s= input("enter a string:")
+# l=0
+# u=0
+# d=0
+# s1=0
+# for i in s:
+#     if i.islower():
+#         l+=1
+#     elif i.isupper():
+#         u+=1
+#     elif i.isdigit():
+#         d+=1
+#     else:
+#         s1+=1
+# print("lower:",l,"upper",u,"digit:",d,"special:",s1)
+#..............................
+# s = input("enter a string: ")
+# s = s.replace(" ", "")
+# print(s)
+#.......................
