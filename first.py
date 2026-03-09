@@ -372,15 +372,19 @@
 #     l1.append(li[i])
 # print(l1)
 #........................
-n=6
-li=[]
-for i in range(n):
-    n1=int(input("Enter a number: "))
-    li.append(n1)
-print(li)
-s=0
-for i in range(n):
-    if li[i] % 2!= 0:
-        s+=li[i]
-print(s)
-#................
+# n=6
+# li=[]
+# for i in range(n):
+#     n1=int(input("Enter a number: "))
+#     li.append(n1)
+# print(li)
+# s=0
+# for i in range(n):
+#     if li[i] % 2!= 0:
+#         s+=li[i]
+# print(s)
+# #................
+#lambda function
+ad=lambda num1,num2:  num1+num2
+print(ad(20,40))
+
