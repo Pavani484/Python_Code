@@ -811,3 +811,30 @@
 #         long=i
 # print(long)
 # ,,,,,,,,,,,,,,,
+# s=input("enter a string:")
+# r=""
+# s1=set()
+# for i in s:
+#     if i not in s1:
+#         r+=i
+#         s1.add(i)
+# print(r)
+#...........
+# class Student:
+#     id=101
+#     name="pavani"
+#     age=19
+#     def study(self):
+#         print("Student is studying")
+#     def eat(self):
+#         print("Student is eating")
+#     def sleep(self):
+#         print("Student is sleeping")
+# s=Student()
+# print(s.id)
+# print(s.name)
+# print(s.age)
+# s.study()
+# s.eat()
+# s.sleep()
+#............................
