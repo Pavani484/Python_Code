@@ -858,3 +858,20 @@
 # print(c.ram)
 # print(c.company)
 #...............................
+# class Computer:
+#     brand = "hp"
+#     cost = 60000
+#     ram = "8gb"
+#     company = "ryzen"
+#     def display(self):
+#         print("Computer is printing information")
+#     def storage(self):
+#         print("computer is storing data")
+#     def process(self):
+#         print(self.brand)
+#         print("computer is processing data")
+# c=Computer()
+# c.display()
+# c.storage()
+# c.process()
+#.................
