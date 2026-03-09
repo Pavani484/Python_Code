@@ -737,3 +737,22 @@
 #         s1+=i
 # print(s1)
 #....................
+#to find the longest word in the sentence
+# s=input("enter a string:")
+# w=s.split()
+# long=""
+# for i in w:
+#     if len(i)>len(long):
+#         long=i
+# print(long)
+#..................................
+#to remove all duplicates in a string while maintaining order
+# s = input("Enter a string: ")
+# result = ""
+# seen = set()
+# for ch in s:
+#     if ch not in seen:
+#         result += ch
+#         seen.add(ch)
+# print(result)
+#....................
