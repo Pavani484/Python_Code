@@ -404,12 +404,18 @@
 # y=list(filter(lambda num:num<10,li))
 # print(y)
 #.....................
-x=[10,11,12,9,6,2]
-l=[i**2  for i in x]
-print(l)
+# x=[10,11,12,9,6,2]
+# l=[i**2  for i in x]
+# print(l)
 #or
-a=[]
-for i in x:
-    a.append(i*i)
-print(a)
+# a=[]
+# for i in x:
+#     a.append(i*i)
+# print(a)
+#or
+# y=list(map(lambda i:i**2,x))
+# print(y)
+#...............
+
+
 
