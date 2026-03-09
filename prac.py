@@ -756,3 +756,23 @@
 #         seen.add(ch)
 # print(result)
 #....................
+#to check wheather to strings are anagroms to each other
+# s = input("Enter first string: ")
+# s1 = input("Enter second string: ")
+#
+# if len(s) != len(s1):
+#     print("Not Anagram")
+# else:
+#     freq = {}
+#
+#     for ch in s:
+#         freq[ch] = freq.get(ch, 0) + 1
+#
+#     for ch in s1:
+#         if ch not in freq or freq[ch] == 0:
+#             print("Not Anagram")
+#             break
+#         freq[ch] -= 1
+#     else:
+#         print("Anagram")
+#.................................
