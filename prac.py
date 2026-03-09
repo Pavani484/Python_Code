@@ -875,3 +875,21 @@
 # c.storage()
 # c.process()
 #.................
+# class Demo:
+#     x = 10  # class variable (like static)
+#
+#     def __init__(self):
+#         self.y = 20  # instance variable
+#
+#     def display(self):
+#         Demo.x += 1
+#         self.y += 1
+#         print(Demo.x, self.y)
+#
+#
+# d1 = Demo()
+# d2 = Demo()
+#
+# d1.display()
+# d2.display()
+#..........................
