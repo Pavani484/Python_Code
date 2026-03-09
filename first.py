@@ -385,6 +385,31 @@
 # print(s)
 # #................
 #lambda function
-ad=lambda num1,num2:  num1+num2
-print(ad(20,40))
+# ad=lambda num1,num2:  num1+num2
+# print(ad(20,40))
+#.........
+# e = lambda num: "even" if num % 2 == 0 else "odd"
+# print(e(20))
+# #...................
+# b=lambda num,num1: "greater" if num > num1 else "smaller"
+# print(b(20,20))
+#.........................
+# li=[10,11,12,9,6,2]
+# n=[i for i in li if i%2==0]
+# print(n)
+# #or
+# y=list(filter(lambda num:num%2==0,li))
+# print(y)
+# y=list(filter(lambda x:print(x),range(1,10)))
+# y=list(filter(lambda num:num<10,li))
+# print(y)
+#.....................
+x=[10,11,12,9,6,2]
+l=[i**2  for i in x]
+print(l)
+#or
+a=[]
+for i in x:
+    a.append(i*i)
+print(a)
 
