@@ -642,5 +642,23 @@
 # p=Program()
 # p.display()
 # ....................
-
-
+#to count number of vowels in a string
+# s=input("enter a string:")
+# ch="aeiou"
+# c=0
+# for i in s:
+#     if i.lower() in  ch:
+#        c+=1
+# print(c)
+#...........................
+# print string in reverse order
+# s=input("enter a string:")
+# r=s[::-1]
+# print(r)
+#(OR)
+# s=input("Enter a string :")
+# r = ""
+# for i in s:
+#     r = i+ r
+# print(r)
+#........................
