@@ -838,3 +838,23 @@
 # s.eat()
 # s.sleep()
 #............................
+# class Computer:
+#     brand="hp"
+#     cost=60000
+#     ram="8gb"
+#     company="ryzen"
+#     def display(self):
+#         print("Computer is printing information")
+#     def storage(self):
+#         print("computer is storing data")
+#     def process(self):
+#         print("computer is processing data")
+# c=Computer()
+# c.display()
+# c.storage()
+# c.process()
+# print(c.brand)
+# print(c.cost)
+# print(c.ram)
+# print(c.company)
+#...............................
