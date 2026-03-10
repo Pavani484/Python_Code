@@ -990,3 +990,20 @@
 # sp.photo()
 # sp.browse()
 #.................
+# class Employee:
+#     def get_salary(self):
+#         print("Getting base salary")
+#
+# class Manager(Employee):
+#     def manage_team(self):
+#         print("Managing team")
+#
+# class SeniorManager(Manager):
+#     def strategic_decisions(self):
+#         print("Making strategic decisions")
+#
+# sm = SeniorManager()
+# sm.get_salary()
+# sm.manage_team()
+# sm.strategic_decisions()
+#..............................
