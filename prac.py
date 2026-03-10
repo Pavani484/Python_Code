@@ -1095,3 +1095,25 @@
 # c=Car('Ford','Mustang',2019)
 # c.car_details()
 #........................
+# import
+# class Example:
+#     def __init__(self,a,b,c):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#     def load_data(self):
+#         with open('example.txt','r') as file:
+#             data=example.txt.readlines()
+#             for line in data:
+#
+#
+# e=Example(1,2,3)
+# e.load_data()
+#............
+# class Doctor:
+#     def do_surgery(self,x,y):
+#         print('x=',x)
+#         print('y=',y)
+# doc = Doctor()
+# doc.do_surgery(10,20)
+#.................
