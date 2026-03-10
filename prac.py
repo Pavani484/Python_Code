@@ -914,3 +914,17 @@
 # S.eat()
 # S.sleep()
 #....................................................
+
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def study(self):
+#         print("Student is studying")
+# def main():
+#     s=Student("Pavani", 22)
+#     print(s.name)
+#     print(s.age)
+#     s.study()
+# main()
+#............................
