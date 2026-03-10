@@ -1083,3 +1083,15 @@
 # s2.display()
 # s3.display()
 #................
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#     def car_details(self):
+#         print(self.make)
+#         print(self.model)
+#         print(self.year)
+# c=Car('Ford','Mustang',2019)
+# c.car_details()
+#........................
