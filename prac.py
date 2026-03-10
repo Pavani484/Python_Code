@@ -1069,3 +1069,17 @@
 # ca.deposit(5000)
 # ca.overdraftlimit()
 #..............................
+# class Student:
+#     def __init__(self,number, name,subject):
+#         self.number = number
+#         self.name = name
+#         self.subject = subject
+#     def display(self):
+#         print(self.number,self.name,self.subject)
+# s=Student(1,'ramesh','python')
+# s2=Student(2,'suresh','django')
+# s3=Student(3,'mahesh','ml')
+# s.display()
+# s2.display()
+# s3.display()
+#................
