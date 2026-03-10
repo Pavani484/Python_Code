@@ -885,11 +885,32 @@
 #         Demo.x += 1
 #         self.y += 1
 #         print(Demo.x, self.y)
-#
-#
 # d1 = Demo()
 # d2 = Demo()
 #
 # d1.display()
 # d2.display()
 #..........................
+# class Stu:
+#     id=102
+#     name="pavani"
+#     def __init__(self,id,name,gender):
+#         self.id=id
+#         self.name=name
+#         self.gender=gender
+#     def study(self):
+#         print("student is studying")
+#     def eat(self):
+#         print("student is eating")
+#     def sleep(self):
+#         print("student is sleeping")
+# S=Stu(101,'lalli',"female")
+# print(S.id)
+# print(S.name)
+# print(S.gender)
+# print(Stu.id)
+# print(Stu.name)
+# S.study()
+# S.eat()
+# S.sleep()
+#....................................................
