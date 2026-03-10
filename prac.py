@@ -976,3 +976,17 @@
 # d.eat()
 # d.bark()
 #.......................
+# class Camera:
+#     def photo(self):
+#         print("Taking photo")
+# class Nokia_Phone:
+#     def call(self):
+#         print("Making Call")
+# class smart_phone(Camera,Nokia_Phone):
+#     def browse(self):
+#         print("Browsing internet")
+# sp=smart_phone()
+# sp.call()
+# sp.photo()
+# sp.browse()
+#.................
