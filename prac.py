@@ -1117,3 +1117,11 @@
 # doc = Doctor()
 # doc.do_surgery(10,20)
 #.................
+# class ListOperations:
+#     def comp(self, l):
+#         m=max(l)
+#         print(m)
+# lo = ListOperations()
+# lo.comp([12,33,45,68.45])
+# lo.comp(list(map(int,input("enter element:").split())))
+# ......................
