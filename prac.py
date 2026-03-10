@@ -1007,3 +1007,17 @@
 # sm.manage_team()
 # sm.strategic_decisions()
 #..............................
+# class Payment:
+#     def pay(self):
+#         print("paying by authentication")
+# class Creditcard(Payment):
+#     def pay(self):
+#         print("paying by credit card")
+# class UPI(Payment):
+#     def pay(self):
+#         print("paying by upi")
+# cc=Creditcard()
+# cc.pay()
+# u=UPI()
+# u.pay()
+#.................
