@@ -1021,3 +1021,14 @@
 # u=UPI()
 # u.pay()
 #.................
+# class Vehical:
+#     vehiclenumber=101
+#     brand="honda"
+#     rentperday=1000
+# class Car(Vehical):
+#     def rent(self):
+#         n=int(input("enter number of days:"))
+#         t=n*1000
+#         print(t)
+
+#...........................
