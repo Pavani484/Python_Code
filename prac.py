@@ -1032,3 +1032,40 @@
 #         print(t)
 
 #...........................
+# class Account:
+#     def __init__(self, accountnumber, balance):
+#         self.accountnumber = accountnumber
+#         self.balance = balance
+#
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(amount, self.balance)
+#
+#     def withdraw(self, amount):
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print("Withdrew",amount," new balance",self.balance)
+#         else:
+#             print("Insufficient balance")
+# class SavingAccount(Account):
+#     def interest(self, rate):
+#         interest_amount = self.balance * rate / 100
+#         print(f"Interest for account {self.accountnumber} = {interest_amount}")
+#         return interest_amount
+#
+#
+# class CurrentAccount(Account):
+#     def overdraftlimit(self):
+#         # Overdraft = 50% of balance
+#         limit = self.balance * 0.5
+#         print(f"Overdraft limit for account {self.accountnumber} = {limit}")
+#         return limit
+#
+# sa = SavingAccount(1001, 10000)
+# sa.deposit(5000)
+# sa.interest(5)  # 5% interest
+#
+# ca = CurrentAccount(2001, 20000)
+# ca.deposit(5000)
+# ca.overdraftlimit()
+#..............................
