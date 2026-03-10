@@ -960,3 +960,19 @@
 # v.call()
 # v.ram()
 # #........................
+# class Animal:
+#     name = 'Animal'
+#     def eat(self):
+#         print('AniMAL is eating')
+# class Dog(Animal):
+#     def bark(self):
+#         print('Dog is barking')
+# class cow(Animal):
+#     def eat(self):
+#         print('cow is eating')
+#     def
+# d=Dog()
+# print(d.name)
+# d.eat()
+# d.bark()
+#.......................
