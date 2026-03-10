@@ -928,3 +928,35 @@
 #     s.study()
 # main()
 #............................
+# class Phone:
+#     name = 'Phone'
+#     def call(self):
+#         print("Calling Phone")
+# class iphone(Phone):
+#     def call(self):
+#         print("Calling iphone")
+#     def  ram(self):
+#         print("iphone has 16 gb ram")
+# class samsung(Phone):
+#     def call(self):
+#         print("Calling samsung")
+#     def ram(self):
+#         print("samsung has 8 gb ram")
+# class vivo(Phone):
+#     def call(self):
+#         print("Calling vivo")
+#     def ram(self):
+#         print("vivo has 16 gb ram")
+# ip=iphone()
+# print(ip.name)
+# ip.call()
+# ip.ram()
+# s=samsung()
+# print(s.name)
+# s.call()
+# s.ram()
+# v=vivo()
+# print(v.name)
+# v.call()
+# v.ram()
+# #........................
