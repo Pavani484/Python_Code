@@ -1125,3 +1125,38 @@
 # lo.comp([12,33,45,68.45])
 # lo.comp(list(map(int,input("enter element:").split())))
 # ......................
+# class Calculator:
+#     def sum(self, a, b):
+#         return a + b
+#     def sub(self, a, b):
+#         return a - b
+#     def mult(self, a, b):
+#         return a * b
+#     def div(self, a, b):
+#         return a / b
+# print("1. Addition")
+# print("2. Subtraction")
+# print("3. Multiplication")
+# print("4. Division")
+# o = int(input("Enter option: "))
+# c = Calculator()
+# a, b = map(int, input("Enter two numbers with space: ").split())
+# if o == 1:
+#     print("Addition:", c.sum(a, b))
+# elif o == 2:
+#     print("Subtraction:", c.sub(a, b))
+# elif o == 3:
+#     print("Multiplication:", c.mult(a, b))
+# elif o == 4:
+#     print("Division:", c.div(a, b))
+# else:
+#     print("Invalid option")
+
+#...............................
+#s = {1, 2, [3, 4]}
+#print(s)
+# s = {True, 1, 0, False}
+# print(s)
+# s = {1, 1.0,2,2.0}
+# print(s)
+#............................
