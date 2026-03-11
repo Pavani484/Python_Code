@@ -161,6 +161,13 @@
 #         mi=i
 # print(mx,mi)
 #...................................
+# How do you convert a tuple into a list and modify it?
+# t=(4,45,6,7,8,9)
+# li=list(t)
+# print(li)
+# li.append(10)
+# print(li)
+#......................
 
 
 
