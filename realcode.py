@@ -95,6 +95,26 @@
 # m.extend(l2[j:])
 # print(m)
 #....................
+#7.	Write a program to remove all negative numbers from a list.
+# l=[-1,2,6,4,5,8,34,-56,74]
+# for i in l:
+#     if i<0:
+#         l.remove(i)
+# print(l)
+# ....................
+#8.	How do you find the second largest element in a list?
+# li=[1,34,56,32,67]
+# l=len(li)
+# firstm=float('-inf')
+# secondm=float('inf')
+# for i in range(l):
+#     if li[i]>firstm:
+#         secondm = firstm
+#         firstm=li[i]
+#     elif li[i]>secondm and li[i]!=firstm:
+#         secondm=li[i]
+# print(secondm)
+#....................
 
 
 
