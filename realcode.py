@@ -58,6 +58,15 @@
 # r=li[::-1]
 # print(r)
 #....................
+#Write a program to search an element in a list and display its position
+# li=[4,5,3,6,7,8,9]
+# s=int(input("enter the element you want to search:"))
+# if s in li:
+#     p=li.index(s)
+#     print(s,"found in position",p)
+# else:
+#     print("element not found")
+#..........................
 
 
 
