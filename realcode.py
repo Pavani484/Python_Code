@@ -145,6 +145,22 @@
 #         dict[i]=1
 # print(dict)
 #...............................................
+#Write a program to find the maximum and minimum element in a tuple.
+# t=(3,4,57,8,9,6)
+# mx=max(t)
+# mi=min(t)
+# print(mx,mi)
+# #(or)
+# t=(4,5,3,2,7,8,5,67,89)
+# mx=float('-inf')
+# mi=float('inf')
+# for i in t:
+#     if i>mx:
+#         mx=i
+#     elif i<mi:
+#         mi=i
+# print(mx,mi)
+#...................................
 
 
 
