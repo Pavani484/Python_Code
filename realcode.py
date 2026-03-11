@@ -115,6 +115,26 @@
 #         secondm=li[i]
 # print(secondm)
 #....................
+#9.	Write a program to rotate a list to the right by 1 position.
+# li=[4,5,7,8,2]
+# last=li[-1]
+# for i in range(len(li)-1,0,-1):
+#     li[i]=li[i-1]
+# li[0]=last
+# print(li)
+#(or)
+# def rotate_right(li, k):
+#     n = len(li)
+#     k = k % n
+#     for _ in range(k):
+#         last = li[-1]
+#         for i in range(n-1, 0, -1):
+#             li[i] = li[i-1]
+#         li[0] = last
+#     return li
+# li = [1, 2, 3, 4, 5]
+# print(rotate_right(li, 2))
+#......................................
 
 
 
