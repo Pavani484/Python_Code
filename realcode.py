@@ -46,6 +46,18 @@
 # print("even numbers count is",e)
 # print("odd numbers count is",o)
 #...........................
+#4.	How do you reverse a list without using reverse()?
+# li=[4,5,6,7,8,9]
+# l=len(li)
+# r=[]
+# for i in range(l-1,-1,-1):
+#     r.append(li[i])
+# print(r)
+#(or)
+# li=[4,5,6,7,8,9]
+# r=li[::-1]
+# print(r)
+#....................
 
 
 
