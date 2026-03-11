@@ -67,7 +67,34 @@
 # else:
 #     print("element not found")
 #..........................
-
+#6.	How can you merge two lists and sort the result
+# l1=[1,3,5,7,8,4]
+# l2=[2,4,9,6,10]
+# l1.extend(l2)
+# l1.sort()
+# print(l1)
+#(or)
+# l1=[1,3,5,7,8,4]
+# l2=[2,4,9,6,10]
+# m=sorted(l1+l2)
+# print(m)
+#(or)
+#if elements are already sorted
+# l1=[1,3,5,7,8,4]
+# l2=[2,4,9,6,10]
+# i=j=0
+# m=[]
+# while i<len(l1) and j<len(l2):
+#     if l1[i]<l2[j]:
+#         m.append(l1[i])
+#         i+=1
+#     else:
+#         m.append(l2[j])
+#         j+=1
+# m.extend(l1[i:])
+# m.extend(l2[j:])
+# print(m)
+#....................
 
 
 
