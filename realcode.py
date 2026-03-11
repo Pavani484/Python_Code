@@ -34,6 +34,18 @@
 #         print(seen)
 # print(unique)
 # ..................................
+#Write a program to count how many even and odd numbers are present in a list
+# li=[3,4,5,6,7,8,65,34,23,-45]
+# e=0
+# o=0
+# for i in li:
+#     if i%2==0:
+#         e+=1
+#     else:
+#         o+=1
+# print("even numbers count is",e)
+# print("odd numbers count is",o)
+#...........................
 
 
 
