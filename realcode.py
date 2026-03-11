@@ -135,6 +135,16 @@
 # li = [1, 2, 3, 4, 5]
 # print(rotate_right(li, 2))
 #......................................
+#10.How do you count occurrences of each element in a list?
+# li=[2,3,6,5,4,3,2,2,2,3]
+# dict={}
+# for i in li:
+#     if i in dict:
+#         dict[i]+=1
+#     else:
+#         dict[i]=1
+# print(dict)
+#...............................................
 
 
 
