@@ -352,6 +352,27 @@
 #     r+=s1[i]
 # print(r)
 #............................
+# l1 = list(map(int, input("Enter roll numbers in event 1: ").split()))
+# l2 = list(map(int, input("Enter roll numbers in event 2: ").split()))
+# common = []
+# only_one = []
+#
+# for i in l1:
+#     if i in l2 and i not in common:
+#         common.append(i)
+#     elif i not in l2:
+#         only_one.append(i)
+#
+# for i in l2:
+#     if i not in l1:
+#         only_one.append(i)
+#
+# print("Students common in both:", common)
+# print("Students present in only one group:", only_one)
+# total_unique = set(l1) | set(l2)
+# print("Total unique participants:", len(total_unique))
+# print("Unique participants list:", total_unique)
+#............
 
 
 
