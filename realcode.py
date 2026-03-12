@@ -225,5 +225,18 @@
 # print(s1.intersection(s2))
 # print(s1 & s2)
 #.............................................
+# n=int(input("enter total purchase amount:"))
+# if n<1000:
+#     print("no discount")
+#     print("Total Payable amount:",n)
+# elif n>1000 or n<5000:
+#     d1=n*(10/100)
+#     p1=n-d1
+#     print("Total Payable amount:",p1)
+# else:
+#     d2 = n*(20/100)
+#     p2 = n-d2
+#     print("Total Payable amount:",p2)
+#.............
 
 
