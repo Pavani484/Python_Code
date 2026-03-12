@@ -327,5 +327,32 @@
 # print("unique elements list:",li)
 # .................
 
+# s=input("enter a sentence:").lower()
+# w=len(s.split())
+# v=c=0
+# print("number of words:",w)
+# for i in s:
+#     if i in "aeiou":
+#         v+=1
+#     elif i not in "aeiou" and i!=" ":
+#         c+=1
+# print("number of vowels:",v)
+# print("number of consonants:",c)
+# dict={}
+# for i in s:
+#     if i not in dict:
+#         dict[i]=1
+#     else:
+#         dict[i]+=1
+# m=max(dict.values())
+# print("frequently occuring characters:",m)
+# r=""
+# s1=s.split()
+# for i in range(len(s1)-1,-1,-1):
+#     r+=s1[i]
+# print(r)
+#............................
+
+
 
 
