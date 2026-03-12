@@ -468,6 +468,25 @@
 # print("Discount:", discount)
 # print("Final Amount:", final_total)
 #..........................................................
+#Your e-commerce website stores product prices in a list. Write a program to find the top 3 highest-priced products
+# li=[34,45,56,67,78,89,76,34,21,43]
+# first=float('-inf')
+# second=float('inf')
+# third=float('inf')
+# for i in li:
+#     if i>first:
+#         third = second
+#         second=first
+#         first=i
+#     elif i>second:
+#         third=second
+#         second=i
+#     elif i>third:
+#         third=i
+# print("highest:",first)
+# print("second highest:",second)
+# print("third highest:",third)
+#...................................
 
 
 
