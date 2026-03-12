@@ -188,4 +188,19 @@
 # c=t[2]
 # d=t[3]
 #.........................
+#6.	Write a program to check whether an element exists in a tuple
+# t=(3,4,5,6,99)
+# s=int(input("enter an element to search:"))
+# if s in t:
+#     print(s,"is exists")
+# else:
+#     print(s,"is not exists")
+#......................
+#Write a program to reverse a tuple
+# t=(3,4,5,6,8,7)
+# l=len(t)
+# print(l)
+# for i in range(l-1,-1,-1):
+#     print(t[i])
+#...................................
 
