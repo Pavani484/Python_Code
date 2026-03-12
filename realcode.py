@@ -171,10 +171,21 @@
 
 
 
-
-
-
-
-
-
+#Write a program to count the number of times an element occurs in a tuple
+# t=(2,4,5,6,3,2,6,5,5)
+# dict={}
+# for i in t:
+#     if i in dict:
+#         dict[i]+=1
+#     else:
+#         dict[i]=1
+# print(dict)
+#.......................
+# How do you unpack values from a tuple into variables?
+# t=(4,5,6,3)
+# a=t[0]
+# b=t[1]
+# c=t[2]
+# d=t[3]
+#.........................
 
