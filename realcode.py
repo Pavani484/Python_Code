@@ -373,6 +373,41 @@
 # print("Total unique participants:", len(total_unique))
 # print("Unique participants list:", total_unique)
 #............
+# books = {
+# 101: {"author":"abc","title":"python","status":"Available"},
+# 102: {"author":"bcd","title":"statistics","status":"Available"},
+# 103: {"title": "Python Basics", "author": "John","status":"Borrowed"},
+# 104: {"title": "Data Science", "author": "Alice","status":"Available"},
+# 105: {"title": "Machine Learning", "author": "Bob","status":"Borrowed"},
+# }
+# def borrow(book_id):
+#     if book_id in books:
+#         if books[book_id]["status"] == "Available":
+#             books[book_id]["status"] = "Borrowed"
+#             print("Book borrowed successfully")
+#         else:
+#             print("Book is already borrowed")
+#     else:
+#         print("Book ID not found")
+# def return_book(book_id):
+#     if book_id in books:
+#         if books[book_id]["status"] == "Borrowed":
+#             books[book_id]["status"] = "Available"
+#             print("Book returned successfully")
+#         else:
+#             print("Book was not borrowed")
+#     else:
+#         print("Book ID not found")
+# def available_books():
+#     print("Available Books:")
+#     for book_id in books:
+#         if books[book_id]["status"] == "Available":
+#             print(book_id, books[book_id]["title"])
+# borrow(int(input("enter a book id to borrow: ")))
+# return_book(int(input("enter the return book id: ")))
+# available_books()
+#...............................
+
 
 
 
