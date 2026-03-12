@@ -238,5 +238,38 @@
 #     p2 = n-d2
 #     print("Total Payable amount:",p2)
 #.............
+# n=int(input("enter number of Subjects:"))
+# s1=[]
+# fail_count=0
+# for i in range(n):
+#     n1=int(input("enter number of marks in each subject:"))
+#     s1.append(n1)
+# T=0
+# for i in s1:
+#     if i>40:
+#         print("pass")
+#     else:
+#         print("fail")
+#         fail_count+=1
+#     T+=i
+# print("Total marks:",T)
+# p=(T/(n*100))*100
+# print("percentage:",p)
+# if fail_count > 0:
+#     print("Overall Result: FAIL")
+# else:
+#     print("Overall Result: PASS")
+# if p<40:
+#     print("D Grade")
+# elif p>=40 and p<50:
+#     print("C Grade")
+# elif p>=50 and p<60:
+#     print("B Grade")
+# elif p>=60  and p<70:
+#     print("A Grade")
+# else:
+#     print("Distinction")
+# ...................
+
 
 
