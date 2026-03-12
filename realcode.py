@@ -487,7 +487,36 @@
 # print("second highest:",second)
 # print("third highest:",third)
 #...................................
-
+#A user uploads a list of transaction IDs. Some IDs are duplicated due to system error. Remove duplicates but maintain the original order
+# li=[1,2,3,4,6,5,6,7,3,4,1,5]
+# l=[]
+# for i in li:
+#     if i not in l:
+#         l.append(i)
+# print(l)
+#.................................
+#3.	You receive daily temperature data. Find the longest streak of increasing temperatures
+# temperatures = [30, 32, 31, 29, 28, 33, 35, 34, 36, 37, 31, 30, 29, 28]
+# temps = [30, 32, 31, 29, 28, 33, 35, 34, 36, 37, 31, 30, 29, 28]
+#
+# max_streak = []
+# current_streak = [temps[0]]
+#
+# for i in range(1, len(temps)):
+#     if temps[i] > temps[i-1]:
+#         current_streak.append(temps[i])
+#     else:
+#         if len(current_streak) > len(max_streak):
+#             max_streak = current_streak
+#         current_streak = [temps[i]]
+#
+# # final check
+# if len(current_streak) > len(max_streak):
+#     max_streak = current_streak
+#
+# print("Longest increasing streak:", max_streak)
+# print("Length:", len(max_streak))
+#............................
 
 
 
