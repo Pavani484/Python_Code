@@ -407,6 +407,38 @@
 # return_book(int(input("enter the return book id: ")))
 # available_books()
 #...............................
+# students = {
+#     "Ananya": {"Math": 85, "Science": 90, "English": 88},
+#     "Rahul": {"Math": 45, "Science": 60, "English": 55},
+#     "Priya": {"Math": 92, "Science": 95, "English": 94},
+#     "Kiran": {"Math": 70, "Science": 48, "English": 65}
+# }
+# averages = {}
+#
+# for name, subjects in students.items():
+#     avg = sum(subjects.values()) / len(subjects)
+#     averages[name] = avg
+#
+# highest_student = max(averages, key=averages.get)
+#
+# print("Student with highest average:", highest_student)
+# print("Average Marks:", averages[highest_student])
+# below_50 = []
+#
+# for name, subjects in students.items():
+#     for mark in subjects.values():
+#         if mark < 50:
+#             below_50.append(name)
+#             break
+#
+# print("Students scoring below 50 in any subject:", below_50)
+# sorted_students = sorted(averages.items(), key=lambda x: x[1], reverse=True)
+#
+# print("Students sorted by average marks (highest to lowest):")
+# for name, avg in sorted_students:
+#     print(name, ":", avg)
+
+#..........................................
 
 
 
