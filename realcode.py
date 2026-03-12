@@ -290,6 +290,42 @@
 #     else:
 #         print("the number is not palindrome")
 # .....................
+# n=int(input("enter number of digits:"))
+# l=[]
+# for i in range(n):
+#     l.append(int(input("enter elements:")))
+# first=float('-inf')
+# second=float('-inf')
+# for i in range(len(l)):
+#     if l[i]>first:
+#         second=first
+#         first=l[i]
+#     elif l[i]>second and l[i]!=first:
+#         second=l[i]
+# print("second largest element:",second)
+# s=0
+# avg=0
+# for i in l:
+#     s=s+i
+# le=len(l)
+# avg=s/le
+# print("average of elements:",avg)
+# all_greater = True
+# for i in l:
+#     if i <= avg:
+#         all_greater = False
+#         break
+#
+# if all_greater:
+#     print("All elements are greater than average")
+# else:
+#     print("All elements are NOT greater than average")
+# li=[]
+# for i in l:
+#     if i not in li:
+#         li.append(i)
+# print("unique elements list:",li)
+# .................
 
 
 
