@@ -270,6 +270,26 @@
 # else:
 #     print("Distinction")
 # ...................
+# n=int(input("enter a number:"))
+# if n<0:
+#     print("palindrome check is not valid for negative numbers")
+# else:
+#     s=0
+#     t=n
+#     r=0
+#     d=len(str(n))
+#     while t>0:
+#         t1=t%10
+#         r=r*10+t1
+#         s=s+t1
+#         t=t//10
+#     print("number of digits:",d)
+#     print("sum of digits:",s)
+#     if r==n:
+#         print("the number is palindrome")
+#     else:
+#         print("the number is not palindrome")
+# .....................
 
 
 
