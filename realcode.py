@@ -439,6 +439,35 @@
 #     print(name, ":", avg)
 
 #..........................................
+# cart = [
+#     ("Laptop", 50000, 1),
+#     ("Mouse", 500, 2),
+#     ("Keyboard", 1500, 1),
+#     ("Headphones", 2000, 1)
+# ]
+# total = 0
+#
+# for item in cart:
+#     name, price, qty = item
+#     total += price * qty
+# discount = 0
+#
+# if total > 50000:
+#     discount = total * 0.10
+#
+# final_total = total - discount
+# print("----- Shopping Receipt -----")
+#
+# for item in cart:
+#     name, price, qty = item
+#     subtotal = price * qty
+#     print(f"{name} - Price:{price} Qty:{qty} Subtotal:{subtotal}")
+#
+# print("-----------------------------")
+# print("Total:", total)
+# print("Discount:", discount)
+# print("Final Amount:", final_total)
+#..........................................................
 
 
 
