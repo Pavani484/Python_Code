@@ -203,4 +203,27 @@
 # for i in range(l-1,-1,-1):
 #     print(t[i])
 #...................................
+#How do you concatenate two tuples.
+# t1=(3,4,5,6,7)
+# t2=(2,8,9,10)
+# print(t1+t2)
+#......................................
+#1.	Write a program to remove duplicate values from a list using a set.
+# li=[3,4,5,6,7,3,3,4]
+# l=list(set(li))
+# print(l)
+#....................
+#2.	How do you find common elements between two sets?
+# s1={34,56,78,45}
+# s2={56,34,67,89.68}
+# for i in s1:
+#     if i in s2:
+#         print(i)
+#(or)
+# s1={34,56,78,45}
+# s2={56,34,67,89.68}
+# print(s1.intersection(s2))
+# print(s1 & s2)
+#.............................................
+
 
