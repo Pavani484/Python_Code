@@ -297,7 +297,6 @@
 #     dict[i]=j
 # print(dict)
 #...........................
-
 # x=['a','b','c','d']
 # y=[10,20,30,40]
 # li=[]
@@ -416,23 +415,36 @@
 # y=list(map(lambda i:i**2,x))
 # print(y)
 #...............
-class Bank:
-    def __init__(self,balance):
-        self.balance = balance
-    def deposit(self,amount):
-        self.balance += amount
-
-    def find(self):
-        self.balance = self.balance
-        print(self.balance)
-b=Bank(10000)
-b.deposit(100)
-b.find()
+# class Bank:
+#     def __init__(self,balance):
+#         self.balance = balance
+#     def deposit(self,amount):
+#         self.balance += amount
+#
+#     def find(self):
+#         self.balance = self.balance
+#         print(self.balance)
+# b=Bank(10000)
+# b.deposit(100)
+# b.find()
 #..................
-li=[10,20,30,40,50,60]
-y=list(filter(lambda x:x%2==0,li))
-print(y)
-
-
+# li=[10,20,30,40,50,60]
+# y=list(filter(lambda x:x%2==0,li))
+# print(y)
+#..................
+# def fun(a,b):
+#     print(a+b)
+#     def fun2(c,d):
+#         print(c+d)
+#     fun2(2,3)
+# fun(10,20)
+# ..............
+# def first(fun):
+#     fun()
+#     print("hello pavani")
+# def second():
+#     print("welcome to functions")
+# first(second)
+#.........
 
 
