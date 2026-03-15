@@ -446,5 +446,31 @@
 #     print("welcome to functions")
 # first(second)
 #.........
+# def first():
+#     print("Hello")
+#     def second():
+#         print("Hi")
+#     return second
+# x=first()
+# x()
+#,,,,,,,....
+
+# def first(fun,name):
+#     print("this line is added above")
+#     fun(name)
+# def second(name):
+#     print("Hello " + name)
+# first(second,"pavani
+
+# def m1(func):
+#     def wrapper():
+#         print("session started")
+#         func()
+#         print("session ended")
+#     return wrapper
+# @m1
+# def m2():
+#     print("welcome to python programming")
+# m2()
 
 
