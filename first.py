@@ -531,6 +531,20 @@
 #         s+=1
 # print(w)
 # print(s)
+#.............
+#split()
+#join()
+#match()
+#findall()
+#^   #this find the the string is starting with  a "mo" or not
+#$  # this find the string ending with "ing " or not
+# import re
+# st='lab laab laaab acb'
+# res=re.findall('a*b',st)# * is 0/1/2/3....
+# res1=re.findall('a+b',st)# +is 1/2/3/4......
+# print(res)
+# print(res1)
+#........................
 
 
 
