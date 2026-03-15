@@ -571,6 +571,21 @@
 # else:
 #     print("Email address invalid")
 #.......................
+# s=input("enter :")
+# s1=''
+# for i in s:
+#     if i.isdigit():
+#         s1+=i
+# print(s1)
+#.................
+import re
+# x=r'\d'
+# s="pavani@3456werty8765"
+# # s1=re.findall(x,s)
+# # s2=re.findall([a-z],s)
+# print(s1)
+# print(s2)
+#....................
 
 
 
