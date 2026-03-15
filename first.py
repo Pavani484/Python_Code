@@ -557,6 +557,20 @@
 # else:
 #     print("the email is not valid")
 #..........................
+# import re
+# phone_pattern=r'^(?:\+91|0)?[6-7-8-9]\d{9}$'
+# email_pattern=r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$'
+# test_phone="+919876543210"
+# test_email="pavani@gmail.com"
+# if re.match(phone_pattern,test_phone):
+#     print("Phone number valid")
+# else:
+#     print("Phone number invalid")
+# if re.match(email_pattern,test_email):
+#     print("Email address valid")
+# else:
+#     print("Email address invalid")
+#.......................
 
 
 
