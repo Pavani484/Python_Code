@@ -505,6 +505,32 @@
 # def mul(n1,n2,n3):
 #     print(n1*n2*n3)
 # mul(4,2,4)
+#.........................
+# s=input("enter a string:")
+# print(s[::-1])
+#.................
+# s=input("enter a string:")
+# s1=s[::2]
+# print(s1)
+# print(s1[::-1])
+#...........
+# s=input("enter a string:")
+# l=len(s)
+# print(s[-3:])
+# print(s[-1:-4:-1])
+# c=0
+# for i in s:
+#     c+=1
+# print(c)
+# s1=input("enter a string:")
+# w=1
+# s=0
+# for i in s1:
+#     if i==" ":
+#         w+=1
+#         s+=1
+# print(w)
+# print(s)
 
 
 
