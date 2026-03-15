@@ -545,6 +545,18 @@
 # print(res)
 # print(res1)
 #........................
+# n=input("enter a phone number:")
+# if n.isdigit() and len(n)==10 and n[0] in ['6','7','8','9']:
+#     print("the phone number is valid")
+# else:
+#     print("the phone number is not valid")
+# #.......................
+# s=input("enter a email id")
+# if '@' in s and '.' in s:
+#     print("the email is valid")
+# else:
+#     print("the email is not valid")
+#..........................
 
 
 
