@@ -472,5 +472,39 @@
 # def m2():
 #     print("welcome to python programming")
 # m2()
+#...................
+# import time
+# def execution_time(func):
+#     def wrapper(*args, **kwargs):
+#         start = time.time()
+#
+#         result = func(*args, **kwargs)
+#
+#         end = time.time()
+#         print(f"Execution time of {func.__name__}: {end - start:.6f} seconds")
+#
+#         return result
+#
+#     return wrapper
+#
+# @execution_time
+# def slow_function():
+#     time.sleep(2)
+#     print("Slow function executed")
+# @execution_time
+# def calculate_sum(n):
+#     total = 0
+#     for i in range(n):
+#         total += i
+#     return total
+# slow_function()
+# result = calculate_sum(34)
+# print("Sum:", result)
+#
+# @execution_time
+# def mul(n1,n2,n3):
+#     print(n1*n2*n3)
+# mul(4,2,4)
+
 
 
