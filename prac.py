@@ -1194,3 +1194,42 @@
 # print(len([1,2,4,5]))
 # print(len((1,2,3,)))
 # ....................
+#operator overloading
+# class Student:
+#     def __init__(self,marks):
+#         self.marks = marks
+#     def __add__(self,other):
+#         total = self.marks + other.marks
+#         print(total)
+# s1=Student(10)
+# s2=Student(20)
+# (s1+s2)
+#.....................
+#method overloading
+# def product(a,b,c):
+#     print(a*b*c)
+# def product(a,b,c=0):
+#     print(a*b*c)
+# product(1,2)
+#or
+# class demo:
+#     def product(self,a,b,c=0):
+#         print(a+b+c)
+# d=demo()
+# d.product(1,2)
+# d.product(1,2,3)
+#................
+#method overloading
+# def fun(*a):
+#     for i in a:
+#         print(i)
+# fun("pavani","lalli","supriya")
+# fun("bca","ca")
+# fun()
+# or
+# def add(*b):
+#     print(sum(b))
+# add(10)
+# add(10,20,30)
+# add(10,20,30,40)
+#......................
