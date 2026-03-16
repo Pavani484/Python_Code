@@ -1160,3 +1160,32 @@
 # s = {1, 1.0,2,2.0}
 # print(s)
 #............................
+#polymorphism
+# class Dog:
+#     def sound(self):
+#         print('Dog is barking')
+# class Cat:
+#     def sound(self):
+#         print('Cat is barking')
+# d=Dog()
+# d.sound()
+# c=Cat()
+# c.sound()
+#........................
+#method overriding
+# class Animal:
+#     def sound(self):
+#         print("Animal make sound")
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog barks")
+# class Cat(Animal):
+#     def sound(self):
+#         print("Cat meows")
+# # a=Animal()
+# # a.sound()
+# d=Dog()
+# d.sound()
+# c=Cat()
+# c.sound()
+#.................
