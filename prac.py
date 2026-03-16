@@ -1189,3 +1189,8 @@
 # c=Cat()
 # c.sound()
 #.................
+#functional polymorphism
+# print(len("string"))
+# print(len([1,2,4,5]))
+# print(len((1,2,3,)))
+# ....................
