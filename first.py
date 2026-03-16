@@ -647,7 +647,13 @@ import matplotlib.pyplot as plt
 # plt.title("line graph")
 # plt.show()
 #.....................
-
+x=[10,20,30,40]
+y=[5,10,15,20]
+plt.scatter(x,y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title("scatter plot")
+plt.show()
 
 
 
