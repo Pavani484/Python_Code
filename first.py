@@ -589,16 +589,16 @@ import re
 #take a sentence /paragraph.Extract all email ids from that paragraph.for eg if the sentence is in case of any escalations contact
 #us at abc123@gmail.com
 #...............
-# 2. take 3 numbers as keyboard print biggest among them
-n=int(input("enter 1 number:"))
-n1=int(input("enter 2nd number:"))
-n2=int(input("enter 3rd number:"))
-if n>n1 and n>n2:
-    print(n,"is maximum number")
-elif n1>n2:
-    print(n1,"is maximum number")
-else:
-    print(n2,"is maximum number")
+# # 2. take 3 numbers as keyboard print biggest among them
+# n=int(input("enter 1 number:"))
+# n1=int(input("enter 2nd number:"))
+# n2=int(input("enter 3rd number:"))
+# if n>n1 and n>n2:
+#     print(n,"is maximum number")
+# elif n1>n2:
+#     print(n1,"is maximum number")
+# else:
+#     print(n2,"is maximum number")
 #...........
 # li=list(map(int,input("enter 3 numbers:").split()))
 # m=float('-inf')
@@ -606,6 +606,11 @@ else:
 #     if i>m:
 #         m=i
 # print("maximum number is :",m)
-
-
-
+#.....................
+#treads
+from threading import Thread
+class MyThread(Thread):
+    def run(self):
+        print('Hello World')
+m1=MyThread()
+m1.start()
