@@ -608,9 +608,43 @@ import re
 # print("maximum number is :",m)
 #.....................
 #treads
-from threading import Thread
-class MyThread(Thread):
-    def run(self):
-        print('Hello World')
-m1=MyThread()
-m1.start()
+# from threading import Thread
+# class MyThread(Thread):
+#     def run(self):
+#         print('Hello World')
+# m1=MyThread()
+# m1.start()
+#................
+# import time
+# def download_file():
+#     print("start downloading")
+#     time.sleep(1)
+#     print("Download Complete")
+# start_time = time.time()
+# download_file()
+# download_file()
+# download_file()
+# end_time = time.time()
+# print(f"total time taken:{end_time - start_time} seconds")
+#........................
+# from abc import ABC, abstractmethod
+# class A(ABC):
+#     @abstractmethod
+#     def fun(self):
+#         pass
+# class B(A):
+#     def fun(self):
+#         print("it's fun time")
+# b=B()
+# b.fun()
+#................
+
+
+
+
+
+
+
+
+
+
