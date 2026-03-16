@@ -638,6 +638,16 @@ import re
 # b=B()
 # b.fun()
 #................
+import matplotlib.pyplot as plt
+# x=[1,2,3,4]
+# y=[3,4,5,6]
+# plt.plot(x,y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.title("line graph")
+# plt.show()
+#.....................
+
 
 
 
