@@ -1233,3 +1233,35 @@
 # add(10,20,30)
 # add(10,20,30,40)
 #......................
+#duck typing
+# class Duck:
+#     def speak(self):
+#         print("Hello duck")
+# class dog:
+#     def speak(self):
+#         print("Hello dog")
+# def make_sound(animal):
+#     animal.speak()
+# d=Duck()
+# dg=dog()
+# make_sound(d)
+# make_sound(dg)
+#or
+# class CreditCard:
+#     def paid(self,amount):
+#         print("paid","amount","using credit card")
+# class UPI:
+#     def paid(self,amount):
+#         print("paid","amount","using upi card")
+# class PayPal:
+#     def paid(self,amount):
+#         print("paid ",amount ,"using paypal")
+# def amount_paid(method,amount):
+#     method.paid(amount)
+# cc=CreditCard()
+# u=UPI()
+# pp=PayPal()
+# amount_paid(cc,100)
+# amount_paid(u,200)
+# amount_paid(pp,300)
+#..............
