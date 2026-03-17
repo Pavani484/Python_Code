@@ -673,6 +673,20 @@ def comparision(n1,n2):
 n1=int(input("enter the first number:"))
 n2=int(input("enter the second number:"))
 print(comparision(n1,n2))
+#.............
+li=[2,3,4,5,6]
+s=set(li)
+print(s)
+t=tuple(li)
+print(t)
+#....................
+s=input("enter a string:")
+r=""
+for i in s:
+   r=i+r
+print(r)
+#.....................
+
 
 
 
