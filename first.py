@@ -665,8 +665,14 @@ import matplotlib.pyplot as plt
 #     fact=fact*i
 # print(fact)
 #................
-
-
+def comparision(n1,n2):
+    if n1 > n2:
+        return n1
+    else:
+        return n2
+n1=int(input("enter the first number:"))
+n2=int(input("enter the second number:"))
+print(comparision(n1,n2))
 
 
 
