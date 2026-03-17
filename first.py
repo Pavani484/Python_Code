@@ -665,26 +665,26 @@ import matplotlib.pyplot as plt
 #     fact=fact*i
 # print(fact)
 #................
-def comparision(n1,n2):
-    if n1 > n2:
-        return n1
-    else:
-        return n2
-n1=int(input("enter the first number:"))
-n2=int(input("enter the second number:"))
-print(comparision(n1,n2))
+# def comparision(n1,n2):
+#     if n1 > n2:
+#         return n1
+#     else:
+#         return n2
+# n1=int(input("enter the first number:"))
+# n2=int(input("enter the second number:"))
+# print(comparision(n1,n2))
 #.............
-li=[2,3,4,5,6]
-s=set(li)
-print(s)
-t=tuple(li)
-print(t)
+# li=[2,3,4,5,6]
+# s=set(li)
+# print(s)
+# t=tuple(li)
+# print(t)
 #....................
-s=input("enter a string:")
-r=""
-for i in s:
-   r=i+r
-print(r)
+# s=input("enter a string:")
+# r=""
+# for i in s:
+#    r=i+r
+# print(r)
 #.....................
 
 
