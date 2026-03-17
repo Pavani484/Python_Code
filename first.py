@@ -655,6 +655,16 @@ import matplotlib.pyplot as plt
 # plt.title("scatter plot")
 # plt.show()
 #......................
+# n1=int(input("enter the first number:"))
+# n2=int(input("enter the second number:"))
+# print(n1%n2)
+#............
+# n=int(input("enter a number:"))
+# fact=1
+# for i in range(n,0,-1):
+#     fact=fact*i
+# print(fact)
+#................
 
 
 
