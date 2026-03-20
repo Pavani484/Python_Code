@@ -544,6 +544,17 @@
 #     return li
 # print(rotate_left([1,2,3,4],2))
 #.............................
+#Separate even and odd numbers into two lists.
+li=[1,2,3,4,5,6,7,8,9]
+li1=[]
+li2=[]
+for i in li:
+    if i % 2 == 0:
+        li1.append(i)
+    else:
+        li2.append(i)
+print(li1)
+print(li2)
 
 
 
