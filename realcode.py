@@ -572,13 +572,13 @@
 # print(dict)
 #...................
 #Remove elements that appear more than once
-# li=[2,3,4,5,6,7,3,5,8,2,1,5,6]
-# dict={}
-# for i in li:
-#     if i not in dict:
-#         dict[i]=1
-#     else:
-#         dict[i]+=1
-#...................
+li=[2,3,4,5,6,7,3,5,8,2,1,5,6]
+dict={}
+for i in li:
+    if i not in dict:
+        dict[i]=1
+    else:
+        dict[i]+=1
+...................
 
 
