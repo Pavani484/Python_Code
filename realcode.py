@@ -526,6 +526,16 @@
 # li[0]=last
 # print(li)
 #(or)
+# def rotate_right(li,k):
+#     n=len(li)
+#     k=k%n
+#     for i in range(k):
+#         last=li[-1]
+#         for j in range(n-1,0,-1):
+#             li[j]=li[j-1]
+#         li[0]=last
+#     return li
+# print(rotate_right([4,5,6,7,8,9],3))
 
 
 
