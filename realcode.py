@@ -290,6 +290,7 @@
 #     else:
 #         print("the number is not palindrome")
 # .....................
+
 # n=int(input("enter number of digits:"))
 # l=[]
 # for i in range(n):
@@ -517,6 +518,14 @@
 # print("Longest increasing streak:", max_streak)
 # print("Length:", len(max_streak))
 #............................
+#Rotate a list left by k positions
+# li=[2,3,4,5,6]
+# last=li[-1]
+# for i in range(len(li)-1,0,-1):
+#     li[i]=li[i-1]
+# li[0]=last
+# print(li)
+#(or)
 
 
 
