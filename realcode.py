@@ -557,9 +557,9 @@
 # print(li2)
 #.................
 #Find the longest increasing sublist
-# li=[2,5,7,9,12,30,67,80]
-# for i in range (len(li)):
-#     if li[i]>
+li=[2,5,7,9,12,30,67,80]
+for i in range (len(li)):
+    if li[i]>
 #......................
 # #Count frequency of each element in a list
 # li=[2,3,4,5,6,7,4,6,2,1,2,3]
