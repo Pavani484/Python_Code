@@ -545,16 +545,31 @@
 # print(rotate_left([1,2,3,4],2))
 #.............................
 #Separate even and odd numbers into two lists.
-li=[1,2,3,4,5,6,7,8,9]
-li1=[]
-li2=[]
+# li=[1,2,3,4,5,6,7,8,9]
+# li1=[]
+# li2=[]
+# for i in li:
+#     if i % 2 == 0:
+#         li1.append(i)
+#     else:
+#         li2.append(i)
+# print(li1)
+# print(li2)
+#.................
+#Find the longest increasing sublist
+# li=[2,5,7,9,12,30,67,80]
+# for i in range (len(li)):
+#     if li[i]>
+#......................
+#Count frequency of each element in a list
+li=[2,3,4,5,6,7,4,6,2,1,2,3]
+dict={}
 for i in li:
-    if i % 2 == 0:
-        li1.append(i)
+    if i not in dict:
+        dict[i]=1
     else:
-        li2.append(i)
-print(li1)
-print(li2)
-
+        dict[i]+=1
+print(dict)
+#...................
 
 
