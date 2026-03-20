@@ -536,7 +536,14 @@
 #         li[0]=last
 #     return li
 # print(rotate_right([4,5,6,7,8,9],3))
-
+#...................
+#Rotate a list left by k positions.
+# def rotate_left(li, k):
+#     k = k % len(li)
+#     li[:] = li[k:] + li[:k]
+#     return li
+# print(rotate_left([1,2,3,4],2))
+#.............................
 
 
 
