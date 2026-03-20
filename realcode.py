@@ -561,15 +561,15 @@
 # for i in range (len(li)):
 #     if li[i]>
 #......................
-#Count frequency of each element in a list
-li=[2,3,4,5,6,7,4,6,2,1,2,3]
-dict={}
-for i in li:
-    if i not in dict:
-        dict[i]=1
-    else:
-        dict[i]+=1
-print(dict)
+# #Count frequency of each element in a list
+# li=[2,3,4,5,6,7,4,6,2,1,2,3]
+# dict={}
+# for i in li:
+#     if i not in dict:
+#         dict[i]=1
+#     else:
+#         dict[i]+=1
+# print(dict)
 #...................
 
 
