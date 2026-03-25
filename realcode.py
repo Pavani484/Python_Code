@@ -625,12 +625,13 @@ from jinja2.nodes import Break
 #     print("Not Palindrome")
 #.......................
 #Search an element and display its position
-li=[2,3,5,6,7,8]
-s=int(input("enter an element:"))
-for i in range (len(li)):
-    if li[i]==s:
-        print("position of element in list is:",i)
-        break
-else:
-    print("element is not found in list")
+# li=[2,3,5,6,7,8]
+# s=int(input("enter an element:"))
+# for i in range (len(li)):
+#     if li[i]==s:
+#         print("position of element in list is:",i)
+#         break
+# else:
+#     print("element is not found in list")
+# ................
 
