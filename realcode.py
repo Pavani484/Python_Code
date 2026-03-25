@@ -612,4 +612,26 @@ from jinja2.nodes import Break
 #     j += 1
 # print(merged)
 #.................
+#Check whether a list is palindrome
+# li=[1,2,3,4,4,3,2,1,2]
+# is_palin=True
+# for i in range(len(li)):
+#     if li[i]!=li[len(li)-i-1]:
+#         is_palin=False
+#         break
+# if is_palin:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+#.......................
+#Search an element and display its position
+# li=[2,3,5,6,7,8]
+# s=int(input("enter an element:"))
+# for i in range (len(li)):
+#     if li[i]==s:
+#         print("position of element in list is:",i)
+#         break
+# else:
+#     print("element is not found in list")
+# ................
 
