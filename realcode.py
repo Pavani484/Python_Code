@@ -567,19 +567,27 @@
 # print(dict)
 #...................
 #Remove elements that appear more than once
-li=[2,3,4,5,6,7,3,5,8,2,1,5]
-dict={}
-for i in li:
-    if i not in dict:
-        dict[i]=1
-    else:
-        dict[i]+=1
-result = []
-for key in dict:
-    if dict[key] == 1:
-        result.append(key)
-
-print(result)
+# li=[2,3,4,5,6,7,3,5,8,2,1,5]
+# dict={}
+# for i in li:
+#     if i not in dict:
+#         dict[i]=1
+#     else:
+#         dict[i]+=1
+# result = []
+# for key in dict:
+#     if dict[key] == 1:
+#         result.append(key)
+# print(result)
 #...................
-
-
+# Find the first non-repeating element in a list.
+li=[34,56,34,56,78,98]
+freq={}
+for i in range(len(li)):
+    if li[i] not in freq:
+        freq[li[i]]=1
+    else:
+        freq[li[i]]+=1
+for key in freq:
+    if freq[key] == 1:
+        print(key)
