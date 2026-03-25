@@ -613,13 +613,14 @@ from jinja2.nodes import Break
 # print(merged)
 #.................
 #Check whether a list is palindrome
-li=[1,2,3,4,4,3,2,1,2]
-is_palin=True
-for i in range(len(li)):
-    if li[i]!=li[len(li)-i-1]:
-        is_palin=False
-        break
-if is_palin:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+# li=[1,2,3,4,4,3,2,1,2]
+# is_palin=True
+# for i in range(len(li)):
+#     if li[i]!=li[len(li)-i-1]:
+#         is_palin=False
+#         break
+# if is_palin:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+#.......................
