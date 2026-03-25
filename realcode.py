@@ -592,3 +592,23 @@ from jinja2.nodes import Break
 #         print(i)
 #         break
 #.................
+#. Merge two sorted lists without using sort().
+# li=[1,4,5,7,9]
+# li2=[2,3,6,8,10,11]
+# i=j=0
+# merged=[]
+# while i<len(li) and j<len(li2):
+#     if li[i]<li2[j]:
+#         merged.append(li[i])
+#         i+=1
+#     else:
+#         merged.append(li2[j])
+#         j+=1
+# while i < len(li):
+#     merged.append(li[i])
+#     i += 1
+# while j < len(li2):
+#     merged.append(li2[j])
+#     j += 1
+# print(merged)
+#.................
