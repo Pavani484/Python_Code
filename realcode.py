@@ -168,8 +168,7 @@
 # li.append(10)
 # print(li)
 #......................
-
-
+from jinja2.nodes import Break
 
 #Write a program to count the number of times an element occurs in a tuple
 # t=(2,4,5,6,3,2,6,5,5)
@@ -581,13 +580,15 @@
 # print(result)
 #...................
 # Find the first non-repeating element in a list.
-li=[34,56,34,56,78,98]
-freq={}
-for i in range(len(li)):
-    if li[i] not in freq:
-        freq[li[i]]=1
-    else:
-        freq[li[i]]+=1
-for key in freq:
-    if freq[key] == 1:
-        print(key)
+# li=[34,56,34,56,78,98]
+# freq={}
+# for i in range(len(li)):
+#     if li[i] not in freq:
+#         freq[li[i]]=1
+#     else:
+#         freq[li[i]]+=1
+# for i in li:
+#     if freq[i]==1:
+#         print(i)
+#         break
+#.................
