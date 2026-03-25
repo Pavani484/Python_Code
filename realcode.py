@@ -555,11 +555,6 @@
 #         li2.append(i)
 # print(li1)
 # print(li2)
-#.................
-#Find the longest increasing sublist
-li=[2,5,7,9,12,30,67,80]
-for i in range (len(li)):
-    if li[i]>
 #......................
 # #Count frequency of each element in a list
 # li=[2,3,4,5,6,7,4,6,2,1,2,3]
@@ -572,13 +567,19 @@ for i in range (len(li)):
 # print(dict)
 #...................
 #Remove elements that appear more than once
-li=[2,3,4,5,6,7,3,5,8,2,1,5,6]
+li=[2,3,4,5,6,7,3,5,8,2,1,5]
 dict={}
 for i in li:
     if i not in dict:
         dict[i]=1
     else:
         dict[i]+=1
+result = []
+for key in dict:
+    if dict[key] == 1:
+        result.append(key)
+
+print(result)
 #...................
 
 
