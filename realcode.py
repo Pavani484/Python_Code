@@ -592,7 +592,7 @@ from jinja2.nodes import Break
 #         print(i)
 #         break
 #.................
-#. Merge two sorted lists without using sort().
+# Merge two sorted lists without using sort().
 # li=[1,4,5,7,9]
 # li2=[2,3,6,8,10,11]
 # i=j=0
