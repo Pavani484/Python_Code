@@ -643,7 +643,7 @@ from jinja2.nodes import Break
 # print(li)
 #..........................
 #Convert list to dictionary
-li=[3,4,5,6,7,8]
-d = {i: li[i] for i in range(len(li))}
-print(d)
-
+# li=[3,4,5,6,7,8]
+# d = {i: li[i] for i in range(len(li))}
+# print(d)
+# ....................
