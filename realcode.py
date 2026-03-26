@@ -655,3 +655,10 @@ for i in li:
         freq[i]=1
     else:
         freq[i]+=1
+max_ele = None
+max_count = 0
+for key in freq:
+    if freq[key] > max_count:
+        max_count = freq[key]
+        max_ele = key
+print("Maximum occurring element:", max_ele)
