@@ -648,17 +648,18 @@ from jinja2.nodes import Break
 # print(d)
 # ....................
 #Find maximum occurring element in list
-li=[4,5,6,2,3,4,4]
-freq={}
-for i in li:
-    if i not in freq:
-        freq[i]=1
-    else:
-        freq[i]+=1
-max_ele = None
-max_count = 0
-for key in freq:
-    if freq[key] > max_count:
-        max_count = freq[key]
-        max_ele = key
-print("Maximum occurring element:", max_ele)
+# li=[4,5,6,2,3,4,4]
+# freq={}
+# for i in li:
+#     if i not in freq:
+#         freq[i]=1
+#     else:
+#         freq[i]+=1
+# max_ele = None
+# max_count = 0
+# for key in freq:
+#     if freq[key] > max_count:
+#         max_count = freq[key]
+#         max_ele = key
+# print("Maximum occurring element:", max_ele)
+#.......................
