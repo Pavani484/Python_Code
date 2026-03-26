@@ -642,5 +642,8 @@ from jinja2.nodes import Break
 #             li[j], li[j + 1] = li[j + 1], li[j]
 # print(li)
 #..........................
-
+#Convert list to dictionary
+li=[3,4,5,6,7,8]
+d = {i: li[i] for i in range(len(li))}
+print(d)
 
