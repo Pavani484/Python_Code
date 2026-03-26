@@ -634,4 +634,13 @@ from jinja2.nodes import Break
 # else:
 #     print("element is not found in list")
 # ................
+#Sort list without using built-in sort().
+li=[2,4,1,5,8,5,9,6]
+for i in range(len(li)):
+    for j in range(0,len(li)-i-1):
+        if li[j] > li[j + 1]:
+            li[j], li[j + 1] = li[j + 1], li[j]
+print(li)
+#..........................
+
 
