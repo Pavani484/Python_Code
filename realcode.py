@@ -707,4 +707,7 @@ from jinja2.nodes import Break
 # t=(3,4,5,6,7,2)
 # print((t[-1],) + t[:-1])
 #or
-
+t = (1,2,3,4,5)
+k = 2
+res = t[k:] + t[:k]
+print(res)
