@@ -663,3 +663,17 @@ from jinja2.nodes import Break
 #         max_ele = key
 # print("Maximum occurring element:", max_ele)
 #.......................
+#Check whether all elements are unique
+t=(3,4,6,8,9)
+freq={}
+for i in t:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+for i in freq.values():
+    if i>1:
+        print("all elements are not unique")
+        break
+else:
+    print("all elements are unique")
