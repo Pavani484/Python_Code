@@ -707,7 +707,17 @@ from jinja2.nodes import Break
 # t=(3,4,5,6,7,2)
 # print((t[-1],) + t[:-1])
 #or
-t = (1,2,3,4,5)
-k = 2
-res = t[k:] + t[:k]
-print(res)
+# t = (1,2,3,4,5)
+# k = 2
+# res = t[k:] + t[:k]
+# print(res)
+# ..................
+#Check whether tuple is sorted
+# t=(1,2,3,4,3,5)
+# for i in range(0,len(t)-1):
+#     if t[i]>t[i+1]:
+#         print("tuple is not sorted")
+#         break
+# else:
+#     print("tuple is sorted")
+#..................
