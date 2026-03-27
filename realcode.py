@@ -691,4 +691,4 @@ from jinja2.nodes import Break
 #     r=r+i
 # print(r)
 #....................
-
+#Find second smallest element in tuple
