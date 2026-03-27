@@ -679,14 +679,16 @@ from jinja2.nodes import Break
 #     print("all elements are unique")
 #......................
 #Flatten a tuple of tuples
-t=((1,2),(4,5),(5,6))
-re=[]
-for i in t:
-    for j in i:
-        re.append(j)
-print(tuple(re))
+# t=((1,2),(4,5),(5,6))
+# re=[]
+# for i in t:
+#     for j in i:
+#         re.append(j)
+# print(tuple(re))
 #or
-r=()
-for i in t:
-    r=r+i
-print(r)
+# r=()
+# for i in t:
+#     r=r+i
+# print(r)
+#....................
+
