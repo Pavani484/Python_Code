@@ -703,3 +703,8 @@ from jinja2.nodes import Break
 #         second_min=i
 # print(second_min)
 #......................
+#Rotate tuple right by 1 position
+# t=(3,4,5,6,7,2)
+# print((t[-1],) + t[:-1])
+#or
+
