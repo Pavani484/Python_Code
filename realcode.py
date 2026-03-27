@@ -692,3 +692,13 @@ from jinja2.nodes import Break
 # print(r)
 #....................
 #Find second smallest element in tuple
+t=(3,4,6,7,2,8,1,9)
+first_min=float('inf')
+second_min=float('inf')
+for i in t:
+    if i<first_min:
+        second_min=first_min
+        first_min=i
+    elif i<second_min and i!=first_min:
+        second_min=i
+print(second_min)
