@@ -736,3 +736,20 @@ from jinja2.nodes import Break
 # else:
 #     print("element not found")
 #...................
+#Find common elements between two sets
+# s={2,3,4,5,7,8}
+# s2={4,5,6,9,1}
+# for i in s:
+#     if i in s2:
+#         print(i)
+# #or
+# s1=s.intersection(s2)
+# print(s1)
+#.................
+#Find elements in set A but not in set B
+s1={4,5,6,7,8}
+s2={5,6,1,2,3}
+for i in s1:
+    if i not in s2:
+        print(i)
+#.................
