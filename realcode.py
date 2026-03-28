@@ -721,3 +721,18 @@ from jinja2.nodes import Break
 # else:
 #     print("tuple is sorted")
 #..................
+#Swap first and last elements of tuple
+# t = (2, 3, 4, 5)
+# t = (t[-1],) + t[1:-1] + (t[0],)
+# print(t)
+#.............
+#Find index of an element without using index().
+# t=(2,3,4,5,6)
+# s=int(input("enter a number:"))
+# for i in range(len(t)):
+#     if t[i]==s:
+#         print("index",i)
+#         break
+# else:
+#     print("element not found")
+#...................
