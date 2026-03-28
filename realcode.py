@@ -747,9 +747,11 @@ from jinja2.nodes import Break
 # print(s1)
 #.................
 #Find elements in set A but not in set B
-s1={4,5,6,7,8}
-s2={5,6,1,2,3}
-for i in s1:
-    if i not in s2:
-        print(i)
+# s1={4,5,6,7,8}
+# s2={5,6,1,2,3}
+# for i in s1:
+#     if i not in s2:
+#         print(i)
 #.................
+#Check whether two sets are disjoint
+
