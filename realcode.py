@@ -780,6 +780,14 @@ from jinja2.nodes import Break
 # l=sorted(s)
 # print(l)
 # ......................
+# Count unique words in a sentence using set
+# s="hi pavani how are you ? what are you doing pavani"
+# s1=s.split()
+# s2=set(s1)
+# print(s2)
+# print(len(s2))
+#.....................
+
 
 
 
