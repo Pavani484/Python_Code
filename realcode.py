@@ -766,3 +766,10 @@ from jinja2.nodes import Break
 #         r.add(i)
 # print(r)
 #...............
+#Remove duplicates from list using set
+# s=[2,3,4,4,5,6,6,7]
+# print(set(s))
+#............
+
+
+
