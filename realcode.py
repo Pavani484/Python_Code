@@ -758,4 +758,11 @@ from jinja2.nodes import Break
 # s2={35,45,24}
 # print(s1.isdisjoint(s2))
 #....................
-
+#Remove elements divisible by 3 from a set
+# s={2,3,4,5,6,9,22,21}
+# r=set()
+# for i in s:
+#     if i%3!=0:
+#         r.add(i)
+# print(r)
+#...............
