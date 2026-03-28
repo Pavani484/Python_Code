@@ -787,7 +787,13 @@ from jinja2.nodes import Break
 # print(s2)
 # print(len(s2))
 #.....................
-
+#Remove vowels from set of characters
+s = {'a','b','c','e','i','o','u','d','f'}
+for ch in {'a','e','i','o','u'}:
+    if ch in s:
+        s.remove(ch)
+print(s)
+#..............
 
 
 
