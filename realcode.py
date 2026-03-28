@@ -770,6 +770,16 @@ from jinja2.nodes import Break
 # s=[2,3,4,4,5,6,6,7]
 # print(set(s))
 #............
+#Check subset and superset.
+#Convert set into sorted list
+# s={2,4,6,5,3,0}
+# l=list(s)
+# l.sort()
+# print(l)
+#or
+# l=sorted(s)
+# print(l)
+# ......................
 
 
 
