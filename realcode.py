@@ -754,4 +754,8 @@ from jinja2.nodes import Break
 #         print(i)
 #.................
 #Check whether two sets are disjoint
+# s1={12,24,34}
+# s2={35,45,24}
+# print(s1.isdisjoint(s2))
+#....................
 
