@@ -1313,6 +1313,23 @@
 # print(s.__marks)        # -100 (new variable)
 # print(s.get_marks())    # 90 (original value)
 #...............
-
-
-
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.__marks = marks
+#
+#     def set_marks(self, marks):
+#         if marks >= 0:
+#             self.__marks = marks
+#         else:
+#             print("Invalid marks")
+#
+#     def get_marks(self):
+#         return self.__marks
+#
+#
+# s = Student("Pavani", 90)
+#
+# s.set_marks(80)   # ✅ correct way
+# print(s.get_marks())
+#.........................
