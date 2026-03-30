@@ -1401,13 +1401,10 @@
 #     def get_balance(self):
 #         return self._balance
 # acc = BankAccount("Pavani", 1000)
-#
 # print(acc.name)          # ✅ public
 # print(acc._balance)      # ⚠️ protected (not recommended)
-#
 # acc.deposit(500)
 # print(acc.get_balance())
-# 
 # acc.withdraw(200)
 # print(acc.get_balance())
 #................................
