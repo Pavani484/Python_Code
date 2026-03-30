@@ -1265,3 +1265,38 @@
 # amount_paid(u,200)
 # amount_paid(pp,300)
 #..............
+#encapsulation
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#
+# s = Student("Pavani", 90)
+# print(s.marks)
+# s.marks = -100   # Wrong data but allowed!
+# print(s.marks)
+#..............
+# class Employee:
+#     def __init__(self, salary):
+#         self._salary = salary   # protected variable
+#
+#     def increase_salary(self, amount):
+#         if amount > 0:
+#             self._salary += amount
+#         else:
+#             print("Invalid increment")
+#
+# emp = Employee(50000)
+#
+# # ✅ Accessing (allowed)
+# print(emp._salary)
+#
+# # ❌ Modifying directly (not recommended)
+# # emp._salary = -10000   # Wrong practice
+# # #
+# # print(emp._salary)
+# emp.increase_salary(5000)
+# print(emp._salary)
+#....................
+
+
