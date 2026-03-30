@@ -1470,25 +1470,25 @@
 # print(e.getsalary())
 # e.__salary = -5000
 #....................
-class UserAccount:
-    def __init__(self, first_name, password):
-        self.first_name = first_name
-        self.__password = password
-    def set_password(self, password):
-        if len(password) >= 6:
-            self.__password = password
-        else:
-            print("weak password")
-    def check_password(self, password):
-        if password==self.__password:
-            print("login successful")
-        else:
-            print("incorrect password")
-u = UserAccount("pavani", "123456")
-u.check_password("pavani")
-u.check_password("abc")
-u.set_password("abc")
-u.set_password("newpass")
+# class UserAccount:
+#     def __init__(self, first_name, password):
+#         self.first_name = first_name
+#         self.__password = password
+#     def set_password(self, password):
+#         if len(password) >= 6:
+#             self.__password = password
+#         else:
+#             print("weak password")
+#     def check_password(self, password):
+#         if password==self.__password:
+#             print("login successful")
+#         else:
+#             print("incorrect password")
+# u = UserAccount("pavani", "123456")
+# u.check_password("pavani")
+# u.check_password("abc")
+# u.set_password("abc")
+# u.set_password("newpass")
 #..................
 
 
