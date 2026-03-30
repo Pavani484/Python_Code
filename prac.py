@@ -1408,4 +1408,16 @@
 # acc.withdraw(200)
 # print(acc.get_balance())
 #................................
-
+# class Student:
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.__marks=marks
+#     def display(self):
+#         print("Name:",self.name)
+#         print("Marks:",self.__marks)
+#     def get_marks(self):
+#         return self.__marks
+# s=Student("pavani",100)
+# s.display()
+# print(s.get_marks())
+#...............
