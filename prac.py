@@ -1350,3 +1350,33 @@
 # self._marks=10
 # print(s._marks)
 #............................
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name           # public
+        self.__balance = balance   # private
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print("Amount deposited")
+        else:
+            print("Invalid amount")
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            print("Amount withdrawn")
+        else:
+            print("Insufficient balance")
+
+    def get_balance(self):
+        return self.__balance
+acc = BankAccount("Pavani", 1000)
+
+print(acc.name)            # ✅ public → works
+
+# print(acc.__balance)       # ❌ ERROR
+
+print(acc.get_balance())   # ✅ correct way
+#...................
+
