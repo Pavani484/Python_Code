@@ -1421,3 +1421,36 @@
 # s.display()
 # print(s.get_marks())
 #...............
+# class Bankaccount:
+#     def __init__(self,name,balance):
+#         self.name = name
+#         self.__balance = balance
+#     def deposit(self,amount):
+#         if amount > 0:
+#             self.__balance += amount
+#             print("amount deposited")
+#         else:
+#             print("invalid amount")
+#     def withdraw(self,amount):
+#         if amount > 0:
+#             if amount<=self.__balance:
+#                 self.__balance -= amount
+#                 print("amount withdrawn")
+#             else:
+#                 print("You don't have enough money")
+#         else:
+#             print("invalid amount")
+#     def set_balance(self,amount):
+#         if amount >=1000:
+#             self.__balance = amount
+#             print("balance is updated")
+#         else:
+#             print("minimum balance should be 1000")
+#     def show_balance(self):
+#         print("current balance:",self.__balance)
+# b=Bankaccount("canara",20000)
+# b.deposit(1000)
+# b.withdraw(500)
+# b.set_balance(2000)
+# b.show_balance()
+#.........................
