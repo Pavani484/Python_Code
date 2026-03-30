@@ -1333,3 +1333,20 @@
 # s.set_marks(80)   # ✅ correct way
 # print(s.get_marks())
 #.........................
+# class Student:
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self._marks=marks
+#     def increase(self,mark):
+#         if mark>0:
+#             self._marks+=mark
+#         else:
+#             print("invalid marks")
+# s=Student("pavani",99)
+# print(s.name)
+# print(s._marks)
+# s.increase(9)
+# print(s._marks)
+# self._marks=10
+# print(s._marks)
+#............................
