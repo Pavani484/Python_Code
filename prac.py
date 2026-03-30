@@ -1298,5 +1298,21 @@
 # emp.increase_salary(5000)
 # print(emp._salary)
 #....................
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.__marks = marks
+#
+#     def get_marks(self):
+#         return self.__marks
+#
+# s = Student("Pavani", 90)
+#
+# s.__marks = -100   # Trying to modify directly
+#
+# print(s.__marks)        # -100 (new variable)
+# print(s.get_marks())    # 90 (original value)
+#...............
+
 
 
