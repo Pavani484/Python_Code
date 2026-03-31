@@ -1,117 +1,221 @@
-users = {
-        "pavani": {"pin": 1234, "balance": 10000},
-        "john": {"pin": 5678, "balance": 5000}
-    }
+import tkinter as tk
+import mysql.connector
+
+# ---------------- MYSQL CONNECTION ----------------
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="Pavani@9312",   # 🔴 change this
+    database="atm_db"
+)
+
+cursor = conn.cursor()
+
+# ---------------- INSERT DEFAULT USERS ----------------
+def init_users():
+    users = [
+        ("pavani", 1234, 10000),
+        ("john", 5678, 5000)
+    ]
+
+    for u in users:
+        cursor.execute("SELECT * FROM users WHERE username=%s", (u[0],))
+        if not cursor.fetchone():
+            cursor.execute(
+                "INSERT INTO users (username, pin, balance) VALUES (%s, %s, %s)",
+                u
+            )
+    conn.commit()
+
+init_users()
+
+# ---------------- ATM LOGIC ----------------
 class ATM:
-    def __init__(self,pin, balance):
-        self.__pin = pin
-        self.__balance = balance
-        self.is_logged_in = False
-        self.attempts = 0
-        self.is_locked = False
-        self.users = users
+    def __init__(self):
         self.current_user = None
-    def login(self, pin):
-        
-        if self.is_locked:
-            print("Account is locked. Try later.")
-            return
 
-        if pin == self.__pin:
-            self.is_logged_in = True
-            self.attempts = 0
-            print("Login successful")
+    def login(self, username, pin):
+        cursor.execute("SELECT * FROM users WHERE username=%s", (username,))
+        user = cursor.fetchone()
+
+        if not user:
+            return "User not found"
+
+        if user[4]:
+            return "Account locked"
+
+        if pin == user[1]:
+            self.current_user = username
+            cursor.execute("UPDATE users SET attempts=0 WHERE username=%s", (username,))
+            conn.commit()
+            return "Login successful"
         else:
-            self.attempts += 1
-            print("Incorrect PIN")
+            attempts = user[3] + 1
+            cursor.execute("UPDATE users SET attempts=%s WHERE username=%s", (attempts, username))
 
-            if self.attempts >= 3:
-                self.is_locked = True
-                print("Account locked due to 3 failed attempts")
+            if attempts >= 3:
+                cursor.execute("UPDATE users SET locked=1 WHERE username=%s", (username,))
+                conn.commit()
+                return "Account locked"
 
-    def logout(self):
-        self.is_logged_in = False
-        print("Logged out")
-    def check_balance(self):
-        if self.is_logged_in:
-            print(self.__balance)
-            print("balance check sucessful")
-        else:
-            print("login first")
+            conn.commit()
+            return "Incorrect PIN"
+
+    def get_balance(self):
+        cursor.execute("SELECT balance FROM users WHERE username=%s", (self.current_user,))
+        return cursor.fetchone()[0]
 
     def deposit(self, amount):
-        if not self.is_logged_in:
-            print("Login first")
-            return
+        if amount <= 0:
+            return "Invalid amount"
 
-        if amount > 0:
-            self.__balance += amount
-            print("Deposit successful")
-        else:
-            print("Invalid amount")
-    def withdraw(self,amount):
-        if not self.is_logged_in:
-            print("login first")
-        elif amount<=0:
-            print("invalid amount")
-        elif amount>5000:
-            print("maximum withdrawal limit is 5000")
-        elif amount>self.__balance:
-            print("insufficient balance")
-        else:
-            self.__balance -= amount
-            print("withdraw successful")
-            print("Remaining balance:", self.__balance)
+        new_balance = self.get_balance() + amount
+        cursor.execute("UPDATE users SET balance=%s WHERE username=%s", (new_balance, self.current_user))
+        cursor.execute("INSERT INTO history VALUES (%s, %s)", (self.current_user, f"Deposited {amount}"))
+        conn.commit()
+        return "Deposit successful"
+
+    def withdraw(self, amount):
+        balance = self.get_balance()
+
+        if amount <= 0:
+            return "Invalid amount"
+        if amount > 5000:
+            return "Limit is 5000"
+        if amount > balance:
+            return "Insufficient balance"
+
+        new_balance = balance - amount
+        cursor.execute("UPDATE users SET balance=%s WHERE username=%s", (new_balance, self.current_user))
+        cursor.execute("INSERT INTO history VALUES (%s, %s)", (self.current_user, f"Withdrew {amount}"))
+        conn.commit()
+        return f"Withdrawn. Balance: {new_balance}"
+
     def change_pin(self, old_pin, new_pin):
-        if self.is_logged_in:
-            if old_pin == self.__pin:
-                if len(str(new_pin)) == 4:
-                    self.__pin = new_pin
-                    print("PIN changed successfully")
-                else:
-                    print("New PIN must be 4 digits")
-            else:
-                print("Incorrect old PIN")
-        else:
-            print("Login first")
+        cursor.execute("SELECT pin FROM users WHERE username=%s", (self.current_user,))
+        current_pin = cursor.fetchone()[0]
+
+        if old_pin != current_pin:
+            return "Wrong old PIN"
+
+        if len(str(new_pin)) == 4:
+            cursor.execute("UPDATE users SET pin=%s WHERE username=%s", (new_pin, self.current_user))
+            conn.commit()
+            return "PIN changed"
+        return "Invalid PIN"
+
+    def get_history(self):
+        cursor.execute("SELECT action FROM history WHERE username=%s", (self.current_user,))
+        return [h[0] for h in cursor.fetchall()]
+
+    def logout(self):
+        self.current_user = None
 
 
+atm = ATM()
 
-atm = ATM(1234, 10000)
+# ---------------- GUI ----------------
+root = tk.Tk()
+root.title("ATM System")
+root.geometry("400x500")
+root.configure(bg="#1e1e2f")
 
-# ❌ Try without login
-atm.withdraw(500)        # Login first
-atm.check_balance()      # Login first
+def clear():
+    for w in root.winfo_children():
+        w.destroy()
 
-# ❌ Wrong PIN attempts
-atm.login(1111)          # Incorrect PIN
-atm.login(2222)          # Incorrect PIN
+# -------- LOGIN SCREEN --------
+def login_screen():
+    clear()
 
-# ✅ Correct login
-atm.login(1234)          # Login successful
+    tk.Label(root, text="ATM Login", font=("Arial", 18, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
 
-# ✅ After login
-atm.check_balance()      # Show balance
+    tk.Label(root, text="Username", bg="#1e1e2f", fg="white").pack()
+    user_entry = tk.Entry(root)
+    user_entry.pack()
 
-atm.withdraw(6000)       # Exceeds limit
-atm.withdraw(500)        # Success
+    tk.Label(root, text="PIN", bg="#1e1e2f", fg="white").pack()
+    pin_entry = tk.Entry(root, show="*")
+    pin_entry.pack()
 
-atm.deposit(1000)        # Deposit success
-atm.check_balance()      # Updated balance
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="yellow")
+    output.pack()
 
-# 🔐 Change PIN
-atm.change_pin(1234, 5678)   # Change PIN
+    def handle_login():
+        try:
+            msg = atm.login(user_entry.get(), int(pin_entry.get()))
+            output.config(text=msg)
+            if msg == "Login successful":
+                dashboard()
+        except:
+            output.config(text="Invalid input")
 
-# 🔓 Logout (if you implemented)
-atm.logout()
+    tk.Button(root, text="Login", bg="#4CAF50", fg="white",
+              width=15, command=handle_login).pack(pady=10)
 
-# ❌ Try old PIN
-atm.login(1234)          # Incorrect PIN
+# -------- DASHBOARD --------
+def dashboard():
+    clear()
 
-# ✅ Login with new PIN
-atm.login(5678)          # Login successful
-atm.check_balance()
-atm.login(1111)
-atm.login(2222)
-atm.login(3333)
-atm.login(1234)
+    tk.Label(root, text=f"Welcome {atm.current_user}",
+             font=("Arial", 14, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
+
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="cyan")
+    output.pack()
+
+    tk.Label(root, text="Amount", bg="#1e1e2f", fg="white").pack()
+    amt_entry = tk.Entry(root)
+    amt_entry.pack()
+
+    def show_balance():
+        output.config(text=f"Balance: {atm.get_balance()}")
+
+    def deposit():
+        try:
+            output.config(text=atm.deposit(int(amt_entry.get())))
+        except:
+            output.config(text="Invalid input")
+
+    def withdraw():
+        try:
+            output.config(text=atm.withdraw(int(amt_entry.get())))
+        except:
+            output.config(text="Invalid input")
+
+    def change_pin():
+        try:
+            old = int(old_pin.get())
+            new = int(new_pin.get())
+            output.config(text=atm.change_pin(old, new))
+        except:
+            output.config(text="Invalid input")
+
+    def show_history():
+        hist = atm.get_history()
+        output.config(text="\n".join(hist) if hist else "No transactions")
+
+    def logout():
+        atm.logout()
+        login_screen()
+
+    tk.Button(root, text="Check Balance", command=show_balance).pack(pady=5)
+    tk.Button(root, text="Deposit", command=deposit).pack(pady=5)
+    tk.Button(root, text="Withdraw", command=withdraw).pack(pady=5)
+
+    tk.Label(root, text="Old PIN", bg="#1e1e2f", fg="white").pack()
+    old_pin = tk.Entry(root)
+    old_pin.pack()
+
+    tk.Label(root, text="New PIN", bg="#1e1e2f", fg="white").pack()
+    new_pin = tk.Entry(root)
+    new_pin.pack()
+
+    tk.Button(root, text="Change PIN", command=change_pin).pack(pady=5)
+    tk.Button(root, text="History", command=show_history).pack(pady=5)
+    tk.Button(root, text="Logout", bg="red", fg="white", command=logout).pack(pady=10)
+
+# Start app
+login_screen()
+root.mainloop()
