@@ -1515,3 +1515,32 @@ class ATM:
                 print("insufficient balance")
         else:
             print("login first")
+    def deposit(self,amount):
+        if self.is_logged_in:
+            if amount>0:
+                self.__balance += amount
+                print("deposit sucessful")
+                self.is_logged_in = False
+            else:
+                print("invalid balance")
+        else:
+            print("login first")
+    def change_pin(self, old_pin, new_pin):
+        if self.is_logged_in:
+            if old_pin == self.__pin:
+                if len(str(new_pin)) == 4:
+                    self.__pin = new_pin
+                    print("PIN changed successfully")
+                else:
+                    print("New PIN must be 4 digits")
+            else:
+                print("Incorrect old PIN")
+        else:
+            print("Login first")
+atm = ATM(1234, 10000)
+atm.withdraw(500)        # Login first
+atm.login(1111)          # Incorrect PIN
+atm.login(1234)          # Login successful
+atm.withdraw(500)        # Withdraw successful
+atm.deposit(1000)        # Deposit successful
+atm.change_pin(1234, 5678)
