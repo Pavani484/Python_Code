@@ -1494,6 +1494,24 @@
 # u.check_password("123456")
 # u.set_password("newpass")
 #..................
-
-
-
+class ATM:
+    def __init__(self,pin, balance):
+        self.__pin = pin
+        self.__balance = balance
+        self.is_logged_in = False
+    def login(self,pin):
+        if pin==self.__pin:
+            self.is_logged_in = True
+            print("login sucessful")
+        else:
+            print("incorrect pin")
+    def withdraw(self,amount):
+        if self.is_logged_in:
+            if amount>0 and amount<=self.__balance:
+                self.__balance -= amount
+                print("withdraw sucessful")
+                self.is_logged_in = False
+            else:
+                print("insufficient balance")
+        else:
+            print("login first")
