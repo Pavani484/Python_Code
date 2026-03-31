@@ -1,3 +1,7 @@
+users = {
+        "pavani": {"pin": 1234, "balance": 10000},
+        "john": {"pin": 5678, "balance": 5000}
+    }
 class ATM:
     def __init__(self,pin, balance):
         self.__pin = pin
@@ -5,7 +9,10 @@ class ATM:
         self.is_logged_in = False
         self.attempts = 0
         self.is_locked = False
+        self.users = users
+        self.current_user = None
     def login(self, pin):
+        
         if self.is_locked:
             print("Account is locked. Try later.")
             return
