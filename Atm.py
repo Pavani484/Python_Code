@@ -8,26 +8,8 @@ conn = mysql.connector.connect(
     password="Pavani@9312",   # 🔴 change this
     database="atm_db"
 )
-
 cursor = conn.cursor()
 
-# ---------------- INSERT DEFAULT USERS ----------------
-def init_users():
-    users = [
-        ("pavani", 1234, 10000),
-        ("john", 5678, 5000)
-    ]
-
-    for u in users:
-        cursor.execute("SELECT * FROM users WHERE username=%s", (u[0],))
-        if not cursor.fetchone():
-            cursor.execute(
-                "INSERT INTO users (username, pin, balance) VALUES (%s, %s, %s)",
-                u
-            )
-    conn.commit()
-
-init_users()
 
 # ---------------- ATM LOGIC ----------------
 class ATM:
@@ -60,6 +42,21 @@ class ATM:
 
             conn.commit()
             return "Incorrect PIN"
+
+    def register(self, username, pin, balance):
+        cursor.execute("SELECT * FROM users WHERE username=%s", (username,))
+        if cursor.fetchone():
+            return "User already exists"
+
+        if len(str(pin)) != 4:
+            return "PIN must be 4 digits"
+
+        cursor.execute(
+            "INSERT INTO users (username, pin, balance) VALUES (%s, %s, %s)",
+            (username, pin, balance)
+        )
+        conn.commit()
+        return "Account created successfully"
 
     def get_balance(self):
         cursor.execute("SELECT balance FROM users WHERE username=%s", (self.current_user,))
@@ -124,6 +121,7 @@ def clear():
     for w in root.winfo_children():
         w.destroy()
 
+
 # -------- LOGIN SCREEN --------
 def login_screen():
     clear()
@@ -153,6 +151,49 @@ def login_screen():
 
     tk.Button(root, text="Login", bg="#4CAF50", fg="white",
               width=15, command=handle_login).pack(pady=10)
+
+    tk.Button(root, text="Register", bg="blue", fg="white",
+              command=register_screen).pack()
+
+
+# -------- REGISTER SCREEN --------
+def register_screen():
+    clear()
+
+    tk.Label(root, text="Create Account", font=("Arial", 16, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
+
+    tk.Label(root, text="Username", bg="#1e1e2f", fg="white").pack()
+    user_entry = tk.Entry(root)
+    user_entry.pack()
+
+    tk.Label(root, text="PIN", bg="#1e1e2f", fg="white").pack()
+    pin_entry = tk.Entry(root)
+    pin_entry.pack()
+
+    tk.Label(root, text="Initial Balance", bg="#1e1e2f", fg="white").pack()
+    bal_entry = tk.Entry(root)
+    bal_entry.pack()
+
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="yellow")
+    output.pack()
+
+    def handle_register():
+        try:
+            msg = atm.register(
+                user_entry.get(),
+                int(pin_entry.get()),
+                int(bal_entry.get())
+            )
+            output.config(text=msg)
+        except:
+            output.config(text="Invalid input")
+
+    tk.Button(root, text="Create Account", bg="green", fg="white",
+              command=handle_register).pack(pady=10)
+
+    tk.Button(root, text="Back", command=login_screen).pack()
+
 
 # -------- DASHBOARD --------
 def dashboard():
@@ -216,6 +257,7 @@ def dashboard():
     tk.Button(root, text="History", command=show_history).pack(pady=5)
     tk.Button(root, text="Logout", bg="red", fg="white", command=logout).pack(pady=10)
 
-# Start app
+
+# Start App
 login_screen()
 root.mainloop()
