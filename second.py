@@ -57,8 +57,18 @@
 # host="localhost",
 # user="root",
 # password="Pavani@9312",
+# database="college"
+# )
+# cursor = conn.cursor()
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS students (
+# id INT PRIMARY KEY,
+# name VARCHAR(100) NOT NULL,
+# age INT,
+# grade VARCHAR(2)
+# )
+# """)
 
-#..........................
 
 
 
