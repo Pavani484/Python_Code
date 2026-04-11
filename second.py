@@ -68,7 +68,24 @@
 # grade VARCHAR(2)
 # )
 # """)
-
+# cursor.execute("INSERT INTO students VALUES (%s, %s, %s, %s)", (1, "Alice", 14, "A"))
+# cursor.execute("INSERT INTO students VALUES (%s, %s, %s, %s)", (2, "Bob", 15, "B"))
+# cursor.execute("INSERT INTO students VALUES (%s, %s, %s, %s)", (3, "Charlie", 14, "A"))
+# conn.commit()
+# cursor.execute("SELECT * FROM students")
+# print("Initial Records:")
+# for row in cursor.fetchall():
+#     print(row)
+# cursor.execute("UPDATE students SET grade = %s WHERE name = %s", ("A+", "Bob"))
+# cursor.execute("DELETE FROM students WHERE id = %s", (3,))
+# conn.commit()
+# cursor.execute("SELECT * FROM students")
+# print("After Update and Delete:")
+# for row in cursor.fetchall():
+#     print(row)
+# cursor.close()
+# conn.close()
+#..........................
 
 
 
