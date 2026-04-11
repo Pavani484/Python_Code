@@ -45,7 +45,20 @@
 # cursor.execute("UPDATE students SET grade = ? WHERE name = ?", ("B", "Bob"))
 # cursor.execute("DELETE FROM students WHERE id = ?", (3,))
 # conn.commit()
+# cursor.execute("SELECT * FROM students")
+# print("After Update and Delete:")
+# for row in cursor.fetchall():
+#     print(row)
+# cursor.close()
+# conn.close()
+#......................
+# import mysql.connector
+# conn = mysql.connector.connect(
+# host="localhost",
+# user="root",
+# password="Pavani@9312",
 
+#..........................
 
 
 
