@@ -62,3 +62,23 @@ class ATM:
         cursor.execute("SELECT balance FROM users WHERE username=%s", (self.current_user,))
         return cursor.fetchone()[0]
 
+    def deposit(self, amount):
+        if amount <= 0:
+            return "Invalid amount"
+
+        new_balance = self.get_balance() + amount
+        cursor.execute("UPDATE users SET balance=%s WHERE username=%s", (new_balance, self.current_user))
+        cursor.execute("INSERT INTO history VALUES (%s, %s)", (self.current_user, f"Deposited {amount}"))
+        conn.commit()
+        return "Deposit successful"
+
+    def withdraw(self, amount):
+        balance = self.get_balance()
+
+        if amount <= 0:
+            return "Invalid amount"
+        if amount > 5000:
+            return "Limit is 5000"
+        if amount > balance:
+            return "Insufficient balance"
+
