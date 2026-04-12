@@ -43,3 +43,22 @@ class ATM:
             conn.commit()
             return "Incorrect PIN"
 
+    def register(self, username, pin, balance):
+        cursor.execute("SELECT * FROM users WHERE username=%s", (username,))
+        if cursor.fetchone():
+            return "User already exists"
+
+        if len(str(pin)) != 4:
+            return "PIN must be 4 digits"
+
+        cursor.execute(
+            "INSERT INTO users (username, pin, balance) VALUES (%s, %s, %s)",
+            (username, pin, balance)
+        )
+        conn.commit()
+        return "Account created successfully"
+
+    def get_balance(self):
+        cursor.execute("SELECT balance FROM users WHERE username=%s", (self.current_user,))
+        return cursor.fetchone()[0]
+
