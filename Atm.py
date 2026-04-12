@@ -101,3 +101,42 @@ class ATM:
             return "PIN changed"
         return "Invalid PIN"
 
+    def get_history(self):
+        cursor.execute("SELECT action FROM history WHERE username=%s", (self.current_user,))
+        return [h[0] for h in cursor.fetchall()]
+
+    def logout(self):
+        self.current_user = None
+
+
+atm = ATM()
+
+# ---------------- GUI ----------------
+root = tk.Tk()
+root.title("ATM System")
+root.geometry("400x500")
+root.configure(bg="#1e1e2f")
+
+def clear():
+    for w in root.winfo_children():
+        w.destroy()
+
+
+# -------- LOGIN SCREEN --------
+def login_screen():
+    clear()
+
+    tk.Label(root, text="ATM Login", font=("Arial", 18, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
+
+    tk.Label(root, text="Username", bg="#1e1e2f", fg="white").pack()
+    user_entry = tk.Entry(root)
+    user_entry.pack()
+
+    tk.Label(root, text="PIN", bg="#1e1e2f", fg="white").pack()
+    pin_entry = tk.Entry(root, show="*")
+    pin_entry.pack()
+
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="yellow")
+    output.pack()
+
