@@ -82,3 +82,22 @@ class ATM:
         if amount > balance:
             return "Insufficient balance"
 
+        new_balance = balance - amount
+        cursor.execute("UPDATE users SET balance=%s WHERE username=%s", (new_balance, self.current_user))
+        cursor.execute("INSERT INTO history VALUES (%s, %s)", (self.current_user, f"Withdrew {amount}"))
+        conn.commit()
+        return f"Withdrawn. Balance: {new_balance}"
+
+    def change_pin(self, old_pin, new_pin):
+        cursor.execute("SELECT pin FROM users WHERE username=%s", (self.current_user,))
+        current_pin = cursor.fetchone()[0]
+
+        if old_pin != current_pin:
+            return "Wrong old PIN"
+
+        if len(str(new_pin)) == 4:
+            cursor.execute("UPDATE users SET pin=%s WHERE username=%s", (new_pin, self.current_user))
+            conn.commit()
+            return "PIN changed"
+        return "Invalid PIN"
+
