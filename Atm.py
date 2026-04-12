@@ -25,3 +25,21 @@ class ATM:
 
         if user[4]:
             return "Account locked"
+
+        if pin == user[1]:
+            self.current_user = username
+            cursor.execute("UPDATE users SET attempts=0 WHERE username=%s", (username,))
+            conn.commit()
+            return "Login successful"
+        else:
+            attempts = user[3] + 1
+            cursor.execute("UPDATE users SET attempts=%s WHERE username=%s", (attempts, username))
+
+            if attempts >= 3:
+                cursor.execute("UPDATE users SET locked=1 WHERE username=%s", (username,))
+                conn.commit()
+                return "Account locked"
+
+            conn.commit()
+            return "Incorrect PIN"
+
