@@ -1494,5 +1494,24 @@
 # u.check_password("123456")
 # u.set_password("newpass")
 #..................
-
-#.......................
+# class Computer:
+#     def __init__(self):
+#         self.name="pavani"
+#         self.age=19
+#     def disp(self):
+#         print(self.name,self.age)
+#     def compare(self,other):
+#         if self.age==other.age:
+#             return True
+#         else:
+#             return False
+# c=Computer()
+# c.age=20
+# c1=Computer()
+# print(c1.age)
+# c.disp()
+# c1.disp()
+# if c.compare(c1):
+#     print("same")
+# else:
+#     print("different")
