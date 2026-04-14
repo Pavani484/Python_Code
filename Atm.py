@@ -193,3 +193,29 @@ def register_screen():
               command=handle_register).pack(pady=10)
 
     tk.Button(root, text="Back", command=login_screen).pack()
+
+
+# -------- DASHBOARD --------
+def dashboard():
+    clear()
+
+    tk.Label(root, text=f"Welcome {atm.current_user}",
+             font=("Arial", 14, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
+
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="cyan")
+    output.pack()
+
+    tk.Label(root, text="Amount", bg="#1e1e2f", fg="white").pack()
+    amt_entry = tk.Entry(root)
+    amt_entry.pack()
+
+    def show_balance():
+        output.config(text=f"Balance: {atm.get_balance()}")
+
+    def deposit():
+        try:
+            output.config(text=atm.deposit(int(amt_entry.get())))
+        except:
+            output.config(text="Invalid input")
+
