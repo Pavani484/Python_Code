@@ -219,3 +219,32 @@ def dashboard():
         except:
             output.config(text="Invalid input")
 
+    def withdraw():
+        try:
+            output.config(text=atm.withdraw(int(amt_entry.get())))
+        except:
+            output.config(text="Invalid input")
+
+    def change_pin():
+        try:
+            old = int(old_pin.get())
+            new = int(new_pin.get())
+            output.config(text=atm.change_pin(old, new))
+        except:
+            output.config(text="Invalid input")
+
+    def show_history():
+        hist = atm.get_history()
+        output.config(text="\n".join(hist) if hist else "No transactions")
+
+    def logout():
+        atm.logout()
+        login_screen()
+
+    tk.Button(root, text="Check Balance", command=show_balance).pack(pady=5)
+    tk.Button(root, text="Deposit", command=deposit).pack(pady=5)
+    tk.Button(root, text="Withdraw", command=withdraw).pack(pady=5)
+
+    tk.Label(root, text="Old PIN", bg="#1e1e2f", fg="white").pack()
+    old_pin = tk.Entry(root)
+    old_pin.pack()
