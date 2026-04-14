@@ -156,3 +156,17 @@ def login_screen():
               command=register_screen).pack()
 
 
+# -------- REGISTER SCREEN --------
+def register_screen():
+    clear()
+
+    tk.Label(root, text="Create Account", font=("Arial", 16, "bold"),
+             bg="#1e1e2f", fg="white").pack(pady=10)
+
+    tk.Label(root, text="Username", bg="#1e1e2f", fg="white").pack()
+    user_entry = tk.Entry(root)
+    user_entry.pack()
+
+    tk.Label(root, text="PIN", bg="#1e1e2f", fg="white").pack()
+    pin_entry = tk.Entry(root)
+    pin_entry.pack()
