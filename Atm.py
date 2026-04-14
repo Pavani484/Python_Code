@@ -140,3 +140,19 @@ def login_screen():
     output = tk.Label(root, text="", bg="#1e1e2f", fg="yellow")
     output.pack()
 
+    def handle_login():
+        try:
+            msg = atm.login(user_entry.get(), int(pin_entry.get()))
+            output.config(text=msg)
+            if msg == "Login successful":
+                dashboard()
+        except:
+            output.config(text="Invalid input")
+
+    tk.Button(root, text="Login", bg="#4CAF50", fg="white",
+              width=15, command=handle_login).pack(pady=10)
+
+    tk.Button(root, text="Register", bg="blue", fg="white",
+              command=register_screen).pack()
+
+
