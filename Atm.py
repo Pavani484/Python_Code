@@ -170,3 +170,26 @@ def register_screen():
     tk.Label(root, text="PIN", bg="#1e1e2f", fg="white").pack()
     pin_entry = tk.Entry(root)
     pin_entry.pack()
+
+    tk.Label(root, text="Initial Balance", bg="#1e1e2f", fg="white").pack()
+    bal_entry = tk.Entry(root)
+    bal_entry.pack()
+
+    output = tk.Label(root, text="", bg="#1e1e2f", fg="yellow")
+    output.pack()
+
+    def handle_register():
+        try:
+            msg = atm.register(
+                user_entry.get(),
+                int(pin_entry.get()),
+                int(bal_entry.get())
+            )
+            output.config(text=msg)
+        except:
+            output.config(text="Invalid input")
+
+    tk.Button(root, text="Create Account", bg="green", fg="white",
+              command=handle_register).pack(pady=10)
+
+    tk.Button(root, text="Back", command=login_screen).pack()
