@@ -1483,3 +1483,14 @@
 #             self.__password = password
 #         else:
 #             print("weak password")
+#     def check_password(self, password):
+#         if password==self.__password:
+#             print("login successful")
+#         else:
+#             print("incorrect password")
+# u = UserAccount("pavani", "123")
+# u.set_password("abcdef")
+# u.check_password("pavani")
+# u.check_password("123456")
+# u.set_password("newpass")
+# .............
