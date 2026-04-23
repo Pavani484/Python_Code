@@ -1469,3 +1469,17 @@
 # e.set_salary(0)
 # print(e.getsalary())
 # e.__salary = -5000
+#....................
+# class UserAccount:
+#     def __init__(self, first_name, password):
+#         self.first_name = first_name
+#         if len(password) >= 6:
+#             self.__password = password
+#         else:
+#             print("Weak password, setting default password")
+#             self.__password = "default123"
+#     def set_password(self, password):
+#         if len(password) >= 6:
+#             self.__password = password
+#         else:
+#             print("weak password")
