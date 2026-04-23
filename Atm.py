@@ -252,12 +252,9 @@ def dashboard():
     tk.Label(root, text="New PIN", bg="#1e1e2f", fg="white").pack()
     new_pin = tk.Entry(root)
     new_pin.pack()
-
     tk.Button(root, text="Change PIN", command=change_pin).pack(pady=5)
     tk.Button(root, text="History", command=show_history).pack(pady=5)
     tk.Button(root, text="Logout", bg="red", fg="white", command=logout).pack(pady=10)
-
-
 # Start App
 login_screen()
 root.mainloop()
