@@ -1493,4 +1493,10 @@
 # u.check_password("pavani")
 # u.check_password("123456")
 # u.set_password("newpass")
+#..................
+# class Computer:
+#     def __init__(self):
+#         self.name="pavani"
+#         self.age=19
+#     def disp(self):
 # .............
