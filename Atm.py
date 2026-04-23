@@ -240,15 +240,12 @@ def dashboard():
     def logout():
         atm.logout()
         login_screen()
-
     tk.Button(root, text="Check Balance", command=show_balance).pack(pady=5)
     tk.Button(root, text="Deposit", command=deposit).pack(pady=5)
     tk.Button(root, text="Withdraw", command=withdraw).pack(pady=5)
-
     tk.Label(root, text="Old PIN", bg="#1e1e2f", fg="white").pack()
     old_pin = tk.Entry(root)
     old_pin.pack()
-
     tk.Label(root, text="New PIN", bg="#1e1e2f", fg="white").pack()
     new_pin = tk.Entry(root)
     new_pin.pack()
