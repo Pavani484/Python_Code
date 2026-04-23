@@ -1515,3 +1515,13 @@
 #     print("same")
 # else:
 #     print("different")
+#.......................
+#instance method
+# class student:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     def display(self):
+#         print(self.name,self.age)
+# s=student('pavani',19)
+# s.display()
