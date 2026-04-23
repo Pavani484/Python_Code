@@ -1525,3 +1525,11 @@
 #         print(self.name,self.age)
 # s=student('pavani',19)
 # s.display()
+#.....................
+#class method
+# class College:
+#     school="zphs"
+#     @classmethod
+#     def display(cls):
+#         return cls.school
+# print(College.display())
