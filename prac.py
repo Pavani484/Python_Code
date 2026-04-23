@@ -1533,3 +1533,10 @@
 #     def display(cls):
 #         return cls.school
 # print(College.display())
+#........................
+# class Computer:
+#     @staticmethod
+#     def add(a,b):
+#         return a+b
+# print(Computer.add(9,2))
+# .............
