@@ -10,3 +10,4 @@ print(df[df['age']>22])
 print(df[df['marks']>43])
 
 print(df[(df['age'] > 21) & (df['marks'] >= 45)])
+print(df[(df['age']>=25) & (df['marks']>45)])
