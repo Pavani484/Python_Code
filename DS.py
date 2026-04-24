@@ -27,3 +27,5 @@ df=pd.DataFrame(data)
 #         return 'C'
 # df['Grade']=df['marks'].apply(check_grade)
 # print(df)
+df = df.sort_values(by='marks', ascending=False)
+print(df)
