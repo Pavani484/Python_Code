@@ -8,3 +8,5 @@ df=pd.DataFrame(data)
 print(df[['name','marks']])
 print(df[df['age']>22])
 print(df[df['marks']>43])
+
+print(df[(df['age'] > 21) & (df['marks'] >= 45)])
