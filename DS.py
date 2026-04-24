@@ -18,3 +18,12 @@ def check_result(x):
 
 df['Result'] = df['marks'].apply(check_result)
 print(df)
+def check_grade(a):
+    if a>=46:
+        return 'A'
+    elif a>=45:
+        return 'B'
+    else:
+        return 'C'
+df['Grade']=df['marks'].apply(check_grade)
+print(df)
